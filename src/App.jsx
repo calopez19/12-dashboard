@@ -1,7 +1,9 @@
 import { VictoryPie, VictoryLabel } from 'victory';
 import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
-import useDashboardStore from './store';
+import {useDashboardStore} from './store';
 import { useState } from 'react';
+import data from './data/csvjson.json'
+import { DropdownSimple } from './Tiers';
 const rawData = [
   { region: 'Norte', producto: 'Electrónica', ventas: 400 },
   { region: 'Norte', producto: 'Ropa', ventas: 200 },
@@ -10,6 +12,11 @@ const rawData = [
   { region: 'Este', producto: 'Electrónica', ventas: 300 },
   { region: 'Este', producto: 'Ropa', ventas: 100 },
 ];
+let dataFilter = data.filter(Element => Element.Dia === '22-feb')
+
+const sumaTotal = dataFilter.reduce((acumulador, objetoActual) => {
+  return acumulador + objetoActual['Daño Perros'];
+}, 0);
 
 const RegionPieChart = ({ data }) => {
   const setSelectedCategory = useDashboardStore((state) => state.setSelectedCategory);
@@ -127,8 +134,10 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        {dataFilter.length}
       </p>
+      <p>{sumaTotal}</p>
+      <DropdownSimple/>
     </>
   )
 }
