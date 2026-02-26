@@ -1,9 +1,10 @@
-import { VictoryPie, VictoryLabel } from 'victory';
-import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
-import {useDashboardStore} from './store';
+import { RegionPieChart } from './components/PieChart';
 import { useState } from 'react';
 import data from './data/csvjson.json'
+import newData from './data/newData.json'
 import { DropdownSimple } from './Tiers';
+import { tierFilter, victoryFilter } from './stores/store';
+import { filteredData } from './hooks/filterData';
 const rawData = [
   { region: 'Norte', producto: 'Electrónica', ventas: 400 },
   { region: 'Norte', producto: 'Ropa', ventas: 200 },
@@ -18,111 +19,19 @@ const sumaTotal = dataFilter.reduce((acumulador, objetoActual) => {
   return acumulador + objetoActual['Daño Perros'];
 }, 0);
 
-const RegionPieChart = ({ data }) => {
-  const setSelectedCategory = useDashboardStore((state) => state.setSelectedCategory);
-  const selectedCategory = useDashboardStore((state) => state.selectedCategory);
-
-  // Agrupar datos por región para el Pie
-  const pieData = data.reduce((acc, curr) => {
-    const existing = acc.find(item => item.x === curr.region);
-    if (existing) existing.y += curr.ventas;
-    else acc.push({ x: curr.region, y: curr.ventas });
-    return acc;
-  }, []);
-
-  return (
-    <VictoryPie
-      data={pieData}
-      colorScale={["#0088FE", "#00C49F", "#FFBB28"]}
-      innerRadius={70}
-      style={{
-        data: {
-          cursor: "pointer",
-          // Resaltar la sección seleccionada
-          fillOpacity: ({ datum }) => (selectedCategory === null || selectedCategory === datum.x ? 1 : 0.3),
-          stroke: ({ datum }) => (selectedCategory === datum.x ? "#000" : "none"),
-          strokeWidth: 2
-        }
-      }}
-      events={[{
-        target: "data",
-        eventHandlers: {
-          onClick: () => {
-            return [{
-              target: "data",
-              mutation: (props) => {
-                setSelectedCategory(props.datum.x); // Actualiza Zustand
-                return null;
-              }
-            }];
-          }
-        }
-      }]}
-    />
-  );
-};
-
-
-const SalesBarChart = ({ data }) => {
-  const selectedCategory = useDashboardStore((state) => state.selectedCategory);
-
-  // Filtrar datos según el estado global de Zustand
-  const filteredData = selectedCategory 
-    ? data.filter(item => item.region === selectedCategory)
-    : data;
-
-  // Formatear para VictoryBar (X: Producto, Y: Ventas)
-  const barData = filteredData.map(item => ({ x: item.producto, y: item.ventas }));
-
-  return (
-    <VictoryChart domainPadding={20}>
-      <VictoryAxis />
-      <VictoryAxis dependentAxis />
-      <VictoryBar
-        data={barData}
-        style={{
-          data: { 
-            fill: selectedCategory ? "#00C49F" : "#0088FE",
-            width: 30 
-          }
-        }}
-        animate={{ duration: 500 }}
-      />
-    </VictoryChart>
-  );
-};
-
-const Dashboard = () => {
-  const selectedCategory = useDashboardStore((state) => state.selectedCategory);
-
-  return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h1>Ventas Dashboard</h1>
-      <p>Filtro activo: <strong>{selectedCategory || 'Todos'}</strong></p>
-      
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-        <div style={{ width: '400px' }}>
-          <h3>Ventas por Región (Click para filtrar)</h3>
-          <RegionPieChart data={rawData} />
-        </div>
-
-        <div style={{ width: '500px' }}>
-          <h3>Detalle por Producto</h3>
-          <SalesBarChart data={rawData} />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-
 function App() {
   const [count, setCount] = useState(0)
-
+  const algo = tierFilter((state) => state.selectTier)
+  const victorias = victoryFilter((state) =>state.selectedResult)
+  const {numberOfDeaths} = filteredData({data: newData})
+  console.log('victorias: ',victorias);
+  
+  console.log(numberOfDeaths);
+    
   return (
     <>
       <div>
-        <Dashboard/>
+        <RegionPieChart data={newData} category={'Restante'}/>
       </div>
       <h1>Vite + React</h1>
       <div className="card">

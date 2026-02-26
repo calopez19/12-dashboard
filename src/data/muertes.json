@@ -1,0 +1,338 @@
+[
+  {
+    "id mision": 6,
+    "muerte": "camilo",
+    "minuto": 14,
+    "segundo": 1
+  },
+  {
+    "id mision": 7,
+    "muerte": "javier",
+    "minuto": 2,
+    "segundo": 16
+  },
+  {
+    "id mision": 7,
+    "muerte": "javier",
+    "minuto": 5,
+    "segundo": 23
+  },
+  {
+    "id mision": 7,
+    "muerte": "camilo",
+    "minuto": 14,
+    "segundo": 34
+  },
+  {
+    "id mision": 8,
+    "muerte": "camilo",
+    "minuto": 7,
+    "segundo": 3
+  },
+  {
+    "id mision": 8,
+    "muerte": "luciano",
+    "minuto": 7,
+    "segundo": 23
+  },
+  {
+    "id mision": 8,
+    "muerte": "luciano",
+    "minuto": 9,
+    "segundo": 29
+  },
+  {
+    "id mision": 9,
+    "muerte": "camilo",
+    "minuto": 11,
+    "segundo": 10
+  },
+  {
+    "id mision": 9,
+    "muerte": "javier",
+    "minuto": 11,
+    "segundo": 14
+  },
+  {
+    "id mision": 11,
+    "muerte": "camilo",
+    "minuto": 9,
+    "segundo": 2
+  },
+  {
+    "id mision": 15,
+    "muerte": "luciano",
+    "minuto": 10,
+    "segundo": 44
+  },
+  {
+    "id mision": 17,
+    "muerte": "javier",
+    "minuto": 12,
+    "segundo": 6
+  },
+  {
+    "id mision": 17,
+    "muerte": "luciano",
+    "minuto": 13,
+    "segundo": 45
+  },
+  {
+    "id mision": 19,
+    "muerte": "javier",
+    "minuto": 10,
+    "segundo": 33
+  },
+  {
+    "id mision": 19,
+    "muerte": "luciano",
+    "minuto": 11,
+    "segundo": 21
+  },
+  {
+    "id mision": 25,
+    "muerte": "luciano",
+    "minuto": 5,
+    "segundo": 9
+  },
+  {
+    "id mision": 27,
+    "muerte": "camilo",
+    "minuto": 14,
+    "segundo": 5
+  },
+  {
+    "id mision": 28,
+    "muerte": "camilo",
+    "minuto": 1,
+    "segundo": 44
+  },
+  {
+    "id mision": 28,
+    "muerte": "camilo",
+    "minuto": 6,
+    "segundo": 12
+  },
+  {
+    "id mision": 29,
+    "muerte": "javier",
+    "minuto": 6,
+    "segundo": 36
+  },
+  {
+    "id mision": 30,
+    "muerte": "camilo",
+    "minuto": 3,
+    "segundo": 27
+  },
+  {
+    "id mision": 30,
+    "muerte": "luciano",
+    "minuto": 6,
+    "segundo": 4
+  },
+  {
+    "id mision": 30,
+    "muerte": "camilo",
+    "minuto": 8,
+    "segundo": 34
+  },
+  {
+    "id mision": 31,
+    "muerte": "luciano",
+    "minuto": 2,
+    "segundo": 25
+  },
+  {
+    "id mision": 32,
+    "muerte": "luciano",
+    "minuto": 8,
+    "segundo": 5
+  },
+  {
+    "id mision": 34,
+    "muerte": "javier",
+    "minuto": 3,
+    "segundo": 47
+  },
+  {
+    "id mision": 35,
+    "muerte": "luciano",
+    "minuto": 15,
+    "segundo": 18
+  },
+  {
+    "id mision": 37,
+    "muerte": "camilo",
+    "minuto": 2,
+    "segundo": 17
+  },
+  {
+    "id mision": 37,
+    "muerte": "luciano",
+    "minuto": 3,
+    "segundo": 20
+  },
+  {
+    "id mision": 37,
+    "muerte": "luciano",
+    "minuto": 7,
+    "segundo": 2
+  },
+  {
+    "id mision": 38,
+    "muerte": "luciano",
+    "minuto": 8,
+    "segundo": 39
+  },
+  {
+    "id mision": 38,
+    "muerte": "camilo",
+    "minuto": 10,
+    "segundo": 17
+  },
+  {
+    "id mision": 38,
+    "muerte": "javier",
+    "minuto": 10,
+    "segundo": 55
+  },
+  {
+    "id mision": 39,
+    "muerte": "javier",
+    "minuto": 1,
+    "segundo": 10
+  },
+  {
+    "id mision": 39,
+    "muerte": "camilo",
+    "minuto": 2,
+    "segundo": 22
+  },
+  {
+    "id mision": 39,
+    "muerte": "luciano",
+    "minuto": 3,
+    "segundo": 24
+  },
+  {
+    "id mision": 40,
+    "muerte": "luciano",
+    "minuto": 6,
+    "segundo": 22
+  },
+  {
+    "id mision": 40,
+    "muerte": "luciano",
+    "minuto": 12,
+    "segundo": 22
+  },
+  {
+    "id mision": 41,
+    "muerte": "luciano",
+    "minuto": 1,
+    "segundo": 57
+  },
+  {
+    "id mision": 41,
+    "muerte": "javier",
+    "minuto": 8,
+    "segundo": 25
+  },
+  {
+    "id mision": 42,
+    "muerte": "luciano",
+    "minuto": 2,
+    "segundo": 52
+  },
+  {
+    "id mision": 42,
+    "muerte": "camilo",
+    "minuto": 5,
+    "segundo": 11
+  },
+  {
+    "id mision": 42,
+    "muerte": "luciano",
+    "minuto": 7,
+    "segundo": 19
+  },
+  {
+    "id mision": 44,
+    "muerte": "luciano",
+    "minuto": 1,
+    "segundo": 12
+  },
+  {
+    "id mision": 44,
+    "muerte": "luciano",
+    "minuto": 12,
+    "segundo": 31
+  },
+  {
+    "id mision": 45,
+    "muerte": "javier",
+    "minuto": 6,
+    "segundo": 20
+  },
+  {
+    "id mision": 45,
+    "muerte": "camilo",
+    "minuto": 6,
+    "segundo": 54
+  },
+  {
+    "id mision": 45,
+    "muerte": "luciano",
+    "minuto": 7,
+    "segundo": 40
+  },
+  {
+    "id mision": 47,
+    "muerte": "luciano",
+    "minuto": 9,
+    "segundo": 41
+  },
+  {
+    "id mision": 47,
+    "muerte": "luciano",
+    "minuto": 12,
+    "segundo": 52
+  },
+  {
+    "id mision": 48,
+    "muerte": "camilo",
+    "minuto": 1,
+    "segundo": 41
+  },
+  {
+    "id mision": 48,
+    "muerte": "luciano",
+    "minuto": 2,
+    "segundo": 25
+  },
+  {
+    "id mision": 48,
+    "muerte": "camilo",
+    "minuto": 2,
+    "segundo": 41
+  },
+  {
+    "id mision": 49,
+    "muerte": "camilo",
+    "minuto": 5,
+    "segundo": 58
+  },
+  {
+    "id mision": 49,
+    "muerte": "luciano",
+    "minuto": 13,
+    "segundo": 30
+  },
+  {
+    "id mision": 49,
+    "muerte": "camilo",
+    "minuto": 17,
+    "segundo": 1
+  }
+]

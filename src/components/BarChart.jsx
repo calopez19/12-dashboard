@@ -1,8 +1,8 @@
 import { VictoryPie, VictoryLabel } from "victory";
 import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
-import {useDashboardStore} from './store';
+import {useDashboardStore} from '../stores/store';
 
-export const SalesBarChart = ({ data }) => {
+export const SalesBarChart = ({ data, category }) => {
   const selectedCategory = useDashboardStore((state) => state.selectedCategory);
 
   // Filtrar datos según el estado global de Zustand

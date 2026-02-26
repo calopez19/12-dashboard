@@ -1,34 +1,32 @@
 import { VictoryPie, VictoryLabel } from "victory";
 import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
-import {useDashboardStore} from './store';
+import { victoryFilter } from "../stores/store";
 
-export const RegionPieChart = ({ data }) => {
-  const setSelectedCategory = useDashboardStore(
-    (state) => state.setSelectedCategory,
-  );
-  const selectedCategory = useDashboardStore((state) => state.selectedCategory);
+export const RegionPieChart = ({ data, category }) => {
+  // use the victory filter store to track the selected result slice
+  const setSelectedResult = victoryFilter((state) => state.setSelectedResult);
+  const selectedResult = victoryFilter((state) => state.selectedResult);
 
-  // Agrupar datos por región para el Pie
+  // contar los datos de la columna dada
   const pieData = data.reduce((acc, curr) => {
-    const existing = acc.find((item) => item.x === curr.region);
-    if (existing) existing.y += curr.ventas;
-    else acc.push({ x: curr.region, y: curr.ventas });
+    const existing = acc.find((item) => item.x === curr[category]);
+    if (existing) existing.y += 1;
+    else acc.push({ x: curr[category], y: 1 });
     return acc;
   }, []);
 
   return (
     <VictoryPie
       data={pieData}
-      colorScale={["#0088FE", "#00C49F", "#FFBB28"]}
-      innerRadius={70}
+      colorScale={["#0ecf0e", "#e4280f"]}
       style={{
         data: {
           cursor: "pointer",
           // Resaltar la sección seleccionada
           fillOpacity: ({ datum }) =>
-            selectedCategory === null || selectedCategory === datum.x ? 1 : 0.3,
+            selectedResult === null || selectedResult === datum.x ? 1 : 0.3,
           stroke: ({ datum }) =>
-            selectedCategory === datum.x ? "#000" : "none",
+            selectedResult === datum.x ? "#000" : "none",
           strokeWidth: 2,
         },
       }}
@@ -41,7 +39,8 @@ export const RegionPieChart = ({ data }) => {
                 {
                   target: "data",
                   mutation: (props) => {
-                    setSelectedCategory(props.datum.x); // Actualiza Zustand
+                    setSelectedResult(props.datum.x);
+                     // Actualiza Zustand
                     return null;
                   },
                 },

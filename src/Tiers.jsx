@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { tierFilter } from "./store";
+import { tierFilter } from "./stores/store";
 
 export function DropdownSimple() {
   const tier = tierFilter((state) => state.selectTier)
 
-  const opciones = ["bajo", "alto", "maestro", "todo"];
+  const opciones = ["bajo", "Alto", "maestro", "todo"];
   const updateTier = tierFilter((state) => state.setSelectedTier)
 
   return (

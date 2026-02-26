@@ -18,7 +18,7 @@ export const tierFilter = create((set) => ({
  export const victoryFilter = create((set) => ({
   selectedResult: null,
   setSelectedResult: (category) => set((state) => ({
-    selectedResult: state.selectedCategory === category ? null : category
+    selectedResult: state.selectedResult === category ? null : category
   }))
  })
 )
