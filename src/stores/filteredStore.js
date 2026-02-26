@@ -11,7 +11,7 @@ export const useDataStore = create((set, get) => ({
   selectedResult: null,
   
   // 2. ESTADO DERIVADO (Aquí vive la lista ya filtrada)
-  filteredGameData: initialData, 
+  filteredGameData: gameData, 
   filteredDeathsData: deaths,
   // 3. ACCIONES
   setTier: (tier) => {
@@ -30,8 +30,8 @@ export const useDataStore = create((set, get) => ({
   applyFilters: () => {
     const { rawGameData, rawDeathData, selectTier, selectedResult } = get();
     
-    const newGameData = selectTier? rawGameData.filter(Element => Element.Tiempo === selectTier) : rawGameData
-    newGameData = selectedResult? newGameData.filter(Element => Element.Restante === apliedVictoryFilter): rawGameData
+    let newGameData = selectTier? rawGameData.filter(Element => Element.Tiempo === selectTier) : rawGameData
+    newGameData = selectedResult? newGameData.filter(Element => Element.Restante === selectedResult): newGameData
 
     const newDeathData = rawDeathData.filter((element) => newGameData.some((data) => data.id === element['id mision']))
 

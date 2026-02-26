@@ -1,9 +1,12 @@
 import { VictoryPie, VictoryLabel } from "victory";
-import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
 import { victoryFilter } from "../stores/store";
+import { useDataStore } from "../stores/filteredStore";
 
 export const RegionPieChart = ({ data, category }) => {
   // use the victory filter store to track the selected result slice
+  const results = useDataStore((state) => { return state.filteredGameData })
+  const deathResults = useDataStore((state) => { return state.filteredDeathsData })
+  const setResult = useDataStore((state) => { return state.setResult })
   const setSelectedResult = victoryFilter((state) => state.setSelectedResult);
   const selectedResult = victoryFilter((state) => state.selectedResult);
 
@@ -40,6 +43,7 @@ export const RegionPieChart = ({ data, category }) => {
                   target: "data",
                   mutation: (props) => {
                     setSelectedResult(props.datum.x);
+                    setResult(props.datum.x);
                      // Actualiza Zustand
                     return null;
                   },

@@ -2,9 +2,10 @@ import { RegionPieChart } from './components/PieChart';
 import { useState } from 'react';
 import data from './data/csvjson.json'
 import newData from './data/newData.json'
-import { DropdownSimple } from './Tiers';
+import { DropdownSimple } from './components/Tiers';
 import { tierFilter, victoryFilter } from './stores/store';
 import { filteredData } from './hooks/filterData';
+import { useDataStore } from './stores/filteredStore';
 const rawData = [
   { region: 'Norte', producto: 'Electrónica', ventas: 400 },
   { region: 'Norte', producto: 'Ropa', ventas: 200 },
@@ -21,12 +22,11 @@ const sumaTotal = dataFilter.reduce((acumulador, objetoActual) => {
 
 function App() {
   const [count, setCount] = useState(0)
-  const algo = tierFilter((state) => state.selectTier)
+  const algo = useDataStore((state) => { return state.filteredDeathsData })
   const victorias = victoryFilter((state) =>state.selectedResult)
   const {numberOfDeaths} = filteredData({data: newData})
-  console.log('victorias: ',victorias);
+  console.log(algo);
   
-  console.log(numberOfDeaths);
     
   return (
     <>
