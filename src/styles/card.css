@@ -1,0 +1,56 @@
+.card {
+  height: 100px;
+  width: 200px;
+  background-color: rgb(44, 130, 204);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank {
+  background-color: beige;
+  height: 100px;
+  width: 70px;
+  position: absolute;
+  top: 0px;
+  right: -75px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 8px;
+
+  opacity: 0; /* Completamente transparente */
+  visibility: hidden; /* Evita que se pueda hacer click mientras está oculto */
+
+  /* LA TRANSICIÓN */
+  transition: all 0.3s ease-in-out; /* Controla la velocidad y suavidad */
+
+  /* Efecto extra opcional: El panel sube un poco al aparecer */
+  /* transform: translateX(-50%) translateY(10px); */ /* Descomenta esto para el efecto */
+}
+
+/* Pequeño triángulo indicador (CSS puro opcional) */
+.rank::after {
+  content: "";
+  position: absolute;
+  top: 0%;       /* Lo pegamos al borde superior del div */
+  left: -12px;         /* Lo separamos un poco de la esquina para que no se vea pegado */
+  
+  /* 2. Forma del triángulo: Apuntando hacia ARRIBA */
+  border-width: 8px;
+  border-style: solid;
+  /* El color va en border-bottom para que la punta mire hacia arriba */
+  border-color: transparent beige transparent transparent; 
+}
+
+/* Cuando pasamos el mouse por .tooltip-container, afectamos a .info-box */
+.card:hover .rank {
+  /* ESTADO FINAL (VISIBLE) */
+  opacity: 1;             /* Visible al 100% */
+  visibility: visible;   /* Permite interactuar con el panel */
+  
+  /* Si usaste el efecto extra de movimiento, lo devolvemos a su sitio */
+  /* transform: translateX(-50%) translateY(0); */
+}

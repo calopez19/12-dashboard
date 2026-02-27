@@ -1,4 +1,3 @@
-import { VictoryPie, VictoryLabel } from "victory";
 import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
 import {useDashboardStore} from '../stores/store';
 
