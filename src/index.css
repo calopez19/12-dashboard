@@ -3,3 +3,13 @@
   padding: 0;
   block-size: auto;
 }
+
+
+@font-face {
+  font-family: 'Monster';
+  src: url('./assets/fonts/MonsterHunter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  /* Es buena práctica añadir font-display para mejorar la carga */
+  font-display: swap; 
+}

@@ -8,12 +8,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h2 {
+
+    font-family: 'Monster';
+    font-weight: 900;
+    font-size: 30px;
+  }
 }
 
 .rank {
-  background-color: beige;
-  height: 100px;
-  width: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 120px;
+  width: 110px;
   position: absolute;
   top: 0px;
   right: -75px;
@@ -29,6 +38,9 @@
 
   /* Efecto extra opcional: El panel sube un poco al aparecer */
   /* transform: translateX(-50%) translateY(10px); */ /* Descomenta esto para el efecto */
+  .person-name {
+    font-size: 18px;
+  }
 }
 
 /* Pequeño triángulo indicador (CSS puro opcional) */
@@ -53,4 +65,24 @@
   
   /* Si usaste el efecto extra de movimiento, lo devolvemos a su sitio */
   /* transform: translateX(-50%) translateY(0); */
+}
+
+
+.person-row {
+  display: flex;
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 10px;           /* Espacio entre el SVG y el nombre */
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.person-score {
+  margin-left: auto;   /* ¡Truco de oro! Empuja el puntaje al extremo derecho */
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.person-name {
+  font-family:  'Monster';
+  flex-grow: 1;        /* Permite que el nombre ocupe el espacio sobrante */
 }

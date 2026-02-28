@@ -19,13 +19,13 @@ function App() {
     missionlist[0]["Daño J"] +
     missionlist[0]["Daño F"] +
     missionlist[0]["Daño L"];
-  const damageC = missionlist[0]["Daño C"] / damage*100;
-  const damageF = missionlist[0]["Daño F"] / damage*100;
-  const damageJ = (missionlist[0]["Daño J"] / damage)*100;
-  const damageL = missionlist[0]["Daño L"] / damage*100;
+  const damageC = (missionlist[0]["Daño C"] / damage) * 100;
+  const damageF = (missionlist[0]["Daño F"] / damage) * 100;
+  const damageJ = (missionlist[0]["Daño J"] / damage) * 100;
+  const damageL = (missionlist[0]["Daño L"] / damage) * 100;
   return (
     <>
-      <div>
+      <div style={{ height: "150px", width: "150px" }}>
         <RegionPieChart data={newData} category={"Restante"} />
       </div>
       <div className="card">
@@ -35,7 +35,7 @@ function App() {
           {damage} {damageC * 100}
         </p>
       </div>
-      <SVGComponent/>
+      <SVGComponent />
       <div
         style={{
           width: "160px",
@@ -46,15 +46,49 @@ function App() {
           border: "1px solid #ddd",
         }}
       >
-        <div style={{ width: `${damageC}%`, backgroundColor: "red",height: '100%' }}></div>
-        <div style={{ width: `${damageF}%`, backgroundColor: "blue",height: '100%' }}></div>
-        <div style={{ width: `${damageJ}%`, backgroundColor: "orange",height: '100%' }}></div>
-        <div style={{ width: `${damageL}%`, backgroundColor: "gray",height: '100%' }}></div>
+        <div
+          style={{
+            width: `${damageC}%`,
+            backgroundColor: "red",
+            height: "100%",
+          }}
+        ></div>
+        <div
+          style={{
+            width: `${damageF}%`,
+            backgroundColor: "blue",
+            height: "100%",
+          }}
+        ></div>
+        <div
+          style={{
+            width: `${damageJ}%`,
+            backgroundColor: "orange",
+            height: "100%",
+          }}
+        ></div>
+        <div
+          style={{
+            width: `${damageL}%`,
+            backgroundColor: "gray",
+            height: "100%",
+          }}
+        ></div>
       </div>
-      <PileChart/>
+      <PileChart />
       <DropdownSimple />
-      <HorizontalChart/>
-      <Card title={'muertes'} info={deathlist.length}/>
+      <HorizontalChart />
+      <Card
+        title={"muertes"}
+        info={deathlist.length}
+        listInfo={[
+          {
+            name: "pepe",
+            icon: <SVGComponent />,
+            score: 55,
+          },
+        ]}
+      />
     </>
   );
 }
