@@ -1,8 +1,9 @@
 import "../styles/card.css";
 import SVGComponent from "./Pata";
+import tarjeta from '../assets/AdobeExpress.png'
 export const Card = ({ title, info, listInfo = [] }) => {
   return (
-    <div className="card">
+    <div className="card" style={{backgroundImage: `url(${tarjeta})`}}>
       <h2>{title}</h2>
       <h1>{info}</h1>
       {listInfo.length ? (

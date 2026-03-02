@@ -14,6 +14,9 @@ function App() {
   const missionlist = useDataStore((state) => {
     return state.filteredGameData;
   });
+  console.log(missionlist.map(Element => typeof Element.Minutos));
+  
+  const gameTime = missionlist.reduce((total, msion) => total + Number(msion.Minutos), 0);
   const damage =
     missionlist[0]["Daño C"] +
     missionlist[0]["Daño J"] +
@@ -89,6 +92,7 @@ function App() {
           },
         ]}
       />
+      <Card title={'minutos'} info={gameTime}/>
     </>
   );
 }
