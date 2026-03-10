@@ -1,6 +1,6 @@
 .card {
-  height: 150px;
-  width: 250px;
+  height: 100px;
+  width: 200px;
   border-radius: 12px;
   position: relative;
   display: flex;
@@ -10,9 +10,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
   h2 {
-
-    font-family: 'Monster';
+    font-family: "Monster";
     font-weight: 900;
     font-size: 30px;
   }
@@ -49,42 +50,41 @@
 .rank::after {
   content: "";
   position: absolute;
-  top: 0%;       /* Lo pegamos al borde superior del div */
-  left: -12px;         /* Lo separamos un poco de la esquina para que no se vea pegado */
-  
+  top: 0%; /* Lo pegamos al borde superior del div */
+  left: -12px; /* Lo separamos un poco de la esquina para que no se vea pegado */
+
   /* 2. Forma del triángulo: Apuntando hacia ARRIBA */
   border-width: 8px;
   border-style: solid;
   /* El color va en border-bottom para que la punta mire hacia arriba */
-  border-color: transparent beige transparent transparent; 
+  border-color: transparent beige transparent transparent;
 }
 
 /* Cuando pasamos el mouse por .tooltip-container, afectamos a .info-box */
 .card:hover .rank {
   /* ESTADO FINAL (VISIBLE) */
-  opacity: 1;             /* Visible al 100% */
-  visibility: visible;   /* Permite interactuar con el panel */
-  
+  opacity: 1; /* Visible al 100% */
+  visibility: visible; /* Permite interactuar con el panel */
+
   /* Si usaste el efecto extra de movimiento, lo devolvemos a su sitio */
   /* transform: translateX(-50%) translateY(0); */
 }
 
-
 .person-row {
   display: flex;
   align-items: center; /* Alinea verticalmente al centro */
-  gap: 10px;           /* Espacio entre el SVG y el nombre */
+  gap: 10px; /* Espacio entre el SVG y el nombre */
   margin-bottom: 8px;
   padding: 5px;
 }
 
 .person-score {
-  margin-left: auto;   /* ¡Truco de oro! Empuja el puntaje al extremo derecho */
+  margin-left: auto; /* ¡Truco de oro! Empuja el puntaje al extremo derecho */
   font-weight: bold;
   color: #4a90e2;
 }
 
 .person-name {
-  font-family:  'Monster';
-  flex-grow: 1;        /* Permite que el nombre ocupe el espacio sobrante */
+  font-family: "Monster";
+  flex-grow: 1; /* Permite que el nombre ocupe el espacio sobrante */
 }
