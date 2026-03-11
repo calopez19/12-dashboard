@@ -37,7 +37,6 @@ export function DashBoard() {
           style={{
             width: "100%",
             height: "220px",
-            backgroundColor: "blue",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
