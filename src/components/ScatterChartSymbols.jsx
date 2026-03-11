@@ -30,7 +30,7 @@ const ScatterChartSymbols = () => {
     }
   });
   console.log(resultados);
-  
+
   const data1 = resultados.camilo;
 
   const data2 = [
@@ -52,6 +52,9 @@ const ScatterChartSymbols = () => {
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <VictoryChart
+        width={400}
+        height={200}
+        padding={{ top: 0, bottom: 10, left: 10, right: 10 }}
         theme={VictoryTheme.material}
         domain={{ x: [0, 50], y: [0, 20] }}
       >
