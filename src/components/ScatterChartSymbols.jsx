@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   VictoryChart,
   VictoryScatter,
@@ -8,103 +8,80 @@ import {
 } from "victory";
 import { useDataStore } from "../stores/filteredStore";
 
+import { SwordShieldIcon } from "./svg/SwordShieldIcon";
+import { LanceIcon } from "./svg/LanceIcon";
+import { DualBladesIcon } from "./svg/DualBladesIcon";
+import { LongSwordIcon } from "./svg/LongSwordIcon";
+// 1. Definimos la configuración fuera del componente para evitar recrearla
+
+const CONFIG_PERSONAS = [
+  { nombre: "camilo", color: "#1e00ff", simbolo: <SwordShieldIcon /> },
+  { nombre: "javier", color: "#455a64", simbolo: <DualBladesIcon /> },
+  { nombre: "luciano", color: "#ffcc00", simbolo: <LongSwordIcon /> },
+  { nombre: "franco", color: "#c43a31", simbolo: <LanceIcon /> },
+];
+
 const ScatterChartSymbols = () => {
-  // Definición de los 3 conjuntos de datos
-  const filteredDeaths = useDataStore((state) => {
-    return state.filteredDeathsData;
-  });
-  //console.log(filteredDeaths);
-  const nombresInteres = ["camilo", "javier", "franco", "luciano"];
-  const resultados = {};
+  const filteredDeaths = useDataStore((state) => state.filteredDeathsData);
 
-  // Inicializamos los arrays para evitar validaciones dentro del loop
-  nombresInteres.forEach((n) => (resultados[n] = []));
+  // 2. Memorizamos el procesamiento de datos
+  const resultados = useMemo(() => {
+    // Inicializamos el objeto basado en nuestra configuración
+    const acc = {};
+    CONFIG_PERSONAS.forEach((p) => (acc[p.nombre] = []));
 
-  filteredDeaths.forEach((data) => {
-    if (resultados.hasOwnProperty(data.muerte)) {
-      // Filtramos, agrupamos y mapeamos en un solo paso
-      resultados[data.muerte].push({
-        x: data["id mision"],
-        y: data.minuto + data.segundo / 60,
-      });
-    }
-  });
-  console.log(resultados);
+    filteredDeaths.forEach((data) => {
+      if (acc.hasOwnProperty(data.muerte)) {
+        acc[data.muerte].push({
+          x: data["id mision"],
+          y: data.minuto + data.segundo / 60,
+        });
+      }
+    });
+    return acc;
+  }, [filteredDeaths]);
 
-  const data1 = resultados.camilo;
-
-  const data2 = [
-    { x: 1.5, y: 4 },
-    { x: 2.5, y: 5 },
-    { x: 3.5, y: 2 },
-    { x: 4.5, y: 6 },
-    { x: 5.5, y: 3 },
-  ];
-
-  const data3 = [
-    { x: 1, y: 6 },
-    { x: 2, y: 1 },
-    { x: 3, y: 3 },
-    { x: 4, y: 8 },
-    { x: 5, y: 5 },
-  ];
+  // 3. Generamos la data de la leyenda dinámicamente
+  const legendData = CONFIG_PERSONAS.map((p) => ({
+    name: p.nombre,
+    symbol: { fill: p.color, type: p.simbolo },
+  }));
 
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <VictoryChart
         width={400}
-        height={200}
-        padding={{ top: 0, bottom: 10, left: 10, right: 10 }}
+        height={250} // Ajustado un poco para dar aire a la leyenda
+        padding={{ top: 50, bottom: 40, left: 50, right: 20 }}
         theme={VictoryTheme.material}
         domain={{ x: [0, 50], y: [0, 20] }}
       >
-        {/* Leyenda para identificar los símbolos */}
         <VictoryLegend
-          x={125}
+          x={50}
           y={10}
           orientation="horizontal"
-          gutter={20}
-          style={{ border: { stroke: "black" }, title: { fontSize: 14 } }}
-          data={[
-            { name: "Serie A", symbol: { fill: "#c43a31", type: "circle" } },
-            { name: "Serie B", symbol: { fill: "#455a64", type: "star" } },
-            {
-              name: "Serie C",
-              symbol: { fill: "#ffcc00", type: "triangleUp" },
-            },
-          ]}
+          gutter={15}
+          style={{ labels: { fontSize: 10 } }}
+          data={legendData}
         />
 
-        {/* Conjunto de Datos 1: Círculos */}
-        <VictoryScatter
-          style={{ data: { fill: "#c43a31" } }}
-          size={7}
-          symbol="circle"
-          data={resultados.camilo}
-        />
-
-        {/* Conjunto de Datos 2: Estrellas */}
-        <VictoryScatter
-          style={{ data: { fill: "#455a64" } }}
-          size={7}
-          symbol="star"
-          data={resultados.javier}
-        />
-
-        {/* Conjunto de Datos 3: Triángulos */}
-        <VictoryScatter
-          style={{ data: { fill: "#ffcc00" } }}
-          size={7}
-          symbol="triangleUp"
-          data={resultados.luciano}
-        />
-
-        <VictoryAxis label="Eje $x$" style={{ axisLabel: { padding: 30 } }} />
+        <VictoryAxis label="Misión" style={{ axisLabel: { padding: 30 } }} />
         <VictoryAxis
           dependentAxis
-          label="Eje $y$"
-          style={{ axisLabel: { padding: 40 } }}
+          label="Minutos"
+          style={{ axisLabel: { padding: 35 } }}
         />
+
+        {/* 4. Mapeo dinámico de las series de datos */}
+        {CONFIG_PERSONAS.map((persona) => (
+          <VictoryScatter
+            key={persona.nombre}
+            style={{ data: { fill: persona.color } }}
+            size={5}
+            dataComponent={persona.simbolo}
+            data={resultados[persona.nombre]}
+          />
+        ))}
       </VictoryChart>
     </div>
   );

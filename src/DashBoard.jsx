@@ -8,6 +8,7 @@ import newData from "./data/newData.json";
 import HorizontalChart from "./components/HorizontalChart";
 import { Scale } from "victory";
 import ScatterChartSymbols from "./components/ScatterChartSymbols";
+import { HatTrick } from "./components/HatTick";
 
 export function DashBoard() {
   const missionlist = useDataStore((state) => {
@@ -29,18 +30,7 @@ export function DashBoard() {
       </section>
       <section className="region middle">
         <div
-          style={{ width: "100%", height: "150px", backgroundColor: "blue" }}
-        >
-          <RegionPieChart data={newData} category={"Restante"} />
-        </div>
-        <div
-          style={{
-            width: "100%",
-            height: "220px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+          style={{ width: "100%", height: "150px", }}
         >
           <ScatterChartSymbols />
         </div>
@@ -48,14 +38,29 @@ export function DashBoard() {
           style={{
             width: "100%",
             height: "150px",
-            backgroundColor: "blue",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
-        ></div>
+        >
+          <RegionPieChart data={newData} category={"Restante"} />
+          
+        </div>
+        <div
+          style={{
+            width: "100%",
+            height: "220px",
+            
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <ScatterChartSymbols />
+        </div>
       </section>
       <section className="region right"></section>
+      <HatTrick/>
     </main>
   );
 }
