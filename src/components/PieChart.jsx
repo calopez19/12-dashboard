@@ -14,7 +14,7 @@ export const RegionPieChart = ({ data, category }) => {
     else acc.push({ x: curr[category], y: 1 });
     return acc;
   }, []);
-
+  
   return (
     <VictoryPie
       data={pieData}

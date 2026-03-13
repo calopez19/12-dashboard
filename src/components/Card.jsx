@@ -5,7 +5,7 @@ export const Card = ({ title, info, listInfo = [] }) => {
   return (
     <div className="card" style={{backgroundImage: `url(${tarjeta})`}}>
       <h2>{title}</h2>
-      <h1>{info}</h1>
+      <p>{info}</p>
       {listInfo.length ? (
         <aside className="rank">
           {listInfo.map((person, index) => (

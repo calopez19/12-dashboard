@@ -15,10 +15,10 @@ import { LongSwordIcon } from "./svg/LongSwordIcon";
 // 1. Definimos la configuración fuera del componente para evitar recrearla
 
 const CONFIG_PERSONAS = [
-  { nombre: "camilo", color: "#1e00ff", simbolo: <SwordShieldIcon /> },
-  { nombre: "javier", color: "#455a64", simbolo: <DualBladesIcon /> },
-  { nombre: "luciano", color: "#ffcc00", simbolo: <LongSwordIcon /> },
-  { nombre: "franco", color: "#c43a31", simbolo: <LanceIcon /> },
+  { nombre: "camilo", color: "#1e00ff", simbolo: 'circle' },
+  { nombre: "javier", color: "#455a64", simbolo: 'star' },
+  { nombre: "luciano", color: "#ffcc00", simbolo: 'square' },
+  { nombre: "franco", color: "#c43a31", simbolo: 'triangle' },
 ];
 
 const ScatterChartSymbols = () => {
@@ -54,7 +54,7 @@ const ScatterChartSymbols = () => {
         height={250} // Ajustado un poco para dar aire a la leyenda
         padding={{ top: 50, bottom: 40, left: 50, right: 20 }}
         theme={VictoryTheme.material}
-        domain={{ x: [0, 50], y: [0, 20] }}
+        domain={{ x: [-10, 190], y: [0, 30] }}
       >
         <VictoryLegend
           x={50}
@@ -78,7 +78,7 @@ const ScatterChartSymbols = () => {
             key={persona.nombre}
             style={{ data: { fill: persona.color } }}
             size={5}
-            dataComponent={persona.simbolo}
+            symbol={persona.simbolo}
             data={resultados[persona.nombre]}
           />
         ))}

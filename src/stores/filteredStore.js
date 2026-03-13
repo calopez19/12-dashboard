@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import deaths from '../data/muertes.json'
+import deaths from '../data/muertesfinal.json'
 import gameData from '../data/newData.json'
 // Supongamos que esta es tu data inicial
 
@@ -31,11 +31,14 @@ export const useDataStore = create((set, get) => ({
     const { rawGameData, rawDeathData, selectTier, selectedResult } = get();
 
     let newGameData = selectTier ? rawGameData.filter(Element => Element.Tiempo === selectTier) : rawGameData
+    console.log(newGameData);
+    
     newGameData = selectedResult ? newGameData.filter(Element => Element.Restante === selectedResult) : newGameData
+    console.log(newGameData);
     const validIds = new Set(newGameData.map(data => data.id));
     const newDeathData = rawDeathData.filter(death =>
       validIds.has(death['id mision']))
 
-    set({ filteredData: newGameData, filteredDeathsData: newDeathData });
+    set({ filteredGameData: newGameData, filteredDeathsData: newDeathData });
   }
 }));
