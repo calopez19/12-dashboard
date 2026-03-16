@@ -16,11 +16,10 @@ export const PileChart = () => {
 
   return (
     <div style={{
-      width: '160px',
-      height: '40px',
+      width: '100%',
+      height: '100%',
       display: 'flex', // Alinea los hijos en fila
       overflow: 'hidden', // Asegura que las esquinas respeten el borde
-      borderRadius: '8px', // Opcional: para que se vea más moderno
       border: '1px solid #ddd'
     }}>
       {segmentos.map((seg, index) => (

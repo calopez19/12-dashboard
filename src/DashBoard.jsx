@@ -9,7 +9,6 @@ import HorizontalChart from "./components/HorizontalChart";
 import ScatterChartSymbols from "./components/ScatterChartSymbols";
 import { HatTrick } from "./components/HatTick";
 import InteractiveLegendChart from "./components/InteractiveLegendChart";
-
 export function DashBoard() {
   const missionlist = useDataStore((state) => {
     return state.filteredGameData;
@@ -89,8 +88,10 @@ export function DashBoard() {
           <InteractiveLegendChart />
         </div>
       </section>
-      <section className="region right"></section>
-      <HatTrick />
+        
+      <section className="region right">
+        <HorizontalChart />
+      </section>
     </main>
   );
 }

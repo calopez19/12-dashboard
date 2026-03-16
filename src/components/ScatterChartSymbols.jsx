@@ -33,7 +33,7 @@ const ScatterChartSymbols = () => {
     filteredDeaths.forEach((data) => {
       if (acc.hasOwnProperty(data.muerte)) {
         acc[data.muerte].push({
-          x: data["id mision"],
+          x: data["id"],
           y: data.minuto + data.segundo / 60,
         });
       }

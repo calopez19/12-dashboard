@@ -13,10 +13,10 @@ export function HatTrick() {
     filteredDeathData.forEach((element) => {
       if (
         acc.person !== element.muerte ||
-        acc.mision !== element["id mision"]
+        acc.mision !== element["id"]
       ) {
         acc.person = element.muerte;
-        acc.mision = element["id mision"];
+        acc.mision = element["id"];
         acc.sum = 1;
         acc["tiempos"] = [
           `${String(element.minuto)}:${String(element.segundo)}`,

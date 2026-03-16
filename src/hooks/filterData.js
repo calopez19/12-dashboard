@@ -8,7 +8,7 @@ export const filteredData = ({data}) => {
   let dataFilter = data.filter(Element => Element.Tiempo === apliedTierFilter)
   dataFilter = apliedVictoryFilter? dataFilter.filter(Element => Element.Restante === apliedVictoryFilter): dataFilter
   
-  const numberOfDeaths = muertes.filter((element) => dataFilter.some((data) => data.id === element['id mision']))
+  const numberOfDeaths = muertes.filter((element) => dataFilter.some((data) => data.id === element['id']))
   
   return {dataFilter, numberOfDeaths}
 }

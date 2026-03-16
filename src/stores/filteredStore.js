@@ -31,13 +31,11 @@ export const useDataStore = create((set, get) => ({
     const { rawGameData, rawDeathData, selectTier, selectedResult } = get();
 
     let newGameData = selectTier ? rawGameData.filter(Element => Element.Tiempo === selectTier) : rawGameData
-    console.log(newGameData);
     
     newGameData = selectedResult ? newGameData.filter(Element => Element.Restante === selectedResult) : newGameData
-    console.log(newGameData);
     const validIds = new Set(newGameData.map(data => data.id));
     const newDeathData = rawDeathData.filter(death =>
-      validIds.has(death['id mision']))
+      validIds.has(death['id']))
 
     set({ filteredGameData: newGameData, filteredDeathsData: newDeathData });
   }

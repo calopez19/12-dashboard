@@ -1,509 +1,509 @@
-[{ "id mision": 6, "muerte": "camilo", "minuto": 14, "segundo": 1 },
+[{ "id": 6, "muerte": "camilo", "minuto": 14, "segundo": 1 },
 
-{ "id mision": 7, "muerte": "javier", "minuto": 2, "segundo": 16 },
+{ "id": 7, "muerte": "javier", "minuto": 2, "segundo": 16 },
 
-{ "id mision": 7, "muerte": "javier", "minuto": 5, "segundo": 23 },
+{ "id": 7, "muerte": "javier", "minuto": 5, "segundo": 23 },
 
-{ "id mision": 7, "muerte": "camilo", "minuto": 14, "segundo": 34 },
+{ "id": 7, "muerte": "camilo", "minuto": 14, "segundo": 34 },
 
-{ "id mision": 8, "muerte": "camilo", "minuto": 7, "segundo": 3 },
+{ "id": 8, "muerte": "camilo", "minuto": 7, "segundo": 3 },
 
-{ "id mision": 8, "muerte": "luciano", "minuto": 7, "segundo": 23 },
+{ "id": 8, "muerte": "luciano", "minuto": 7, "segundo": 23 },
 
-{ "id mision": 8, "muerte": "luciano", "minuto": 9, "segundo": 29 },
+{ "id": 8, "muerte": "luciano", "minuto": 9, "segundo": 29 },
 
-{ "id mision": 9, "muerte": "camilo", "minuto": 11, "segundo": 10 },
+{ "id": 9, "muerte": "camilo", "minuto": 11, "segundo": 10 },
 
-{ "id mision": 9, "muerte": "javier", "minuto": 11, "segundo": 14 },
+{ "id": 9, "muerte": "javier", "minuto": 11, "segundo": 14 },
 
-{ "id mision": 11, "muerte": "camilo", "minuto": 9, "segundo": 2 },
+{ "id": 11, "muerte": "camilo", "minuto": 9, "segundo": 2 },
 
-{ "id mision": 15, "muerte": "luciano", "minuto": 10, "segundo": 44 },
+{ "id": 15, "muerte": "luciano", "minuto": 10, "segundo": 44 },
 
-{ "id mision": 17, "muerte": "javier", "minuto": 12, "segundo": 6 },
+{ "id": 17, "muerte": "javier", "minuto": 12, "segundo": 6 },
 
-{ "id mision": 17, "muerte": "luciano", "minuto": 13, "segundo": 45 },
+{ "id": 17, "muerte": "luciano", "minuto": 13, "segundo": 45 },
 
-{ "id mision": 19, "muerte": "javier", "minuto": 10, "segundo": 33 },
+{ "id": 19, "muerte": "javier", "minuto": 10, "segundo": 33 },
 
-{ "id mision": 19, "muerte": "luciano", "minuto": 11, "segundo": 21 },
+{ "id": 19, "muerte": "luciano", "minuto": 11, "segundo": 21 },
 
-{ "id mision": 25, "muerte": "luciano", "minuto": 5, "segundo": 9 },
+{ "id": 25, "muerte": "luciano", "minuto": 5, "segundo": 9 },
 
-{ "id mision": 27, "muerte": "camilo", "minuto": 14, "segundo": 5 },
+{ "id": 27, "muerte": "camilo", "minuto": 14, "segundo": 5 },
 
-{ "id mision": 28, "muerte": "camilo", "minuto": 1, "segundo": 44 },
+{ "id": 28, "muerte": "camilo", "minuto": 1, "segundo": 44 },
 
-{ "id mision": 28, "muerte": "camilo", "minuto": 6, "segundo": 12 },
+{ "id": 28, "muerte": "camilo", "minuto": 6, "segundo": 12 },
 
-{ "id mision": 29, "muerte": "javier", "minuto": 6, "segundo": 36 },
+{ "id": 29, "muerte": "javier", "minuto": 6, "segundo": 36 },
 
-{ "id mision": 30, "muerte": "camilo", "minuto": 3, "segundo": 27 },
+{ "id": 30, "muerte": "camilo", "minuto": 3, "segundo": 27 },
 
-{ "id mision": 30, "muerte": "luciano", "minuto": 6, "segundo": 4 },
+{ "id": 30, "muerte": "luciano", "minuto": 6, "segundo": 4 },
 
-{ "id mision": 30, "muerte": "camilo", "minuto": 8, "segundo": 34 },
+{ "id": 30, "muerte": "camilo", "minuto": 8, "segundo": 34 },
 
-{ "id mision": 31, "muerte": "luciano", "minuto": 2, "segundo": 25 },
+{ "id": 31, "muerte": "luciano", "minuto": 2, "segundo": 25 },
 
-{ "id mision": 32, "muerte": "luciano", "minuto": 8, "segundo": 5 },
+{ "id": 32, "muerte": "luciano", "minuto": 8, "segundo": 5 },
 
-{ "id mision": 34, "muerte": "javier", "minuto": 3, "segundo": 47 },
+{ "id": 34, "muerte": "javier", "minuto": 3, "segundo": 47 },
 
-{ "id mision": 35, "muerte": "luciano", "minuto": 15, "segundo": 18 },
+{ "id": 35, "muerte": "luciano", "minuto": 15, "segundo": 18 },
 
-{ "id mision": 37, "muerte": "camilo", "minuto": 2, "segundo": 17 },
+{ "id": 37, "muerte": "camilo", "minuto": 2, "segundo": 17 },
 
-{ "id mision": 37, "muerte": "luciano", "minuto": 3, "segundo": 20 },
+{ "id": 37, "muerte": "luciano", "minuto": 3, "segundo": 20 },
 
-{ "id mision": 37, "muerte": "luciano", "minuto": 7, "segundo": 2 },
+{ "id": 37, "muerte": "luciano", "minuto": 7, "segundo": 2 },
 
-{ "id mision": 38, "muerte": "luciano", "minuto": 8, "segundo": 39 },
+{ "id": 38, "muerte": "luciano", "minuto": 8, "segundo": 39 },
 
-{ "id mision": 38, "muerte": "camilo", "minuto": 10, "segundo": 17 },
+{ "id": 38, "muerte": "camilo", "minuto": 10, "segundo": 17 },
 
-{ "id mision": 38, "muerte": "javier", "minuto": 10, "segundo": 55 },
+{ "id": 38, "muerte": "javier", "minuto": 10, "segundo": 55 },
 
-{ "id mision": 39, "muerte": "javier", "minuto": 1, "segundo": 10 },
+{ "id": 39, "muerte": "javier", "minuto": 1, "segundo": 10 },
 
-{ "id mision": 39, "muerte": "camilo", "minuto": 2, "segundo": 22 },
+{ "id": 39, "muerte": "camilo", "minuto": 2, "segundo": 22 },
 
-{ "id mision": 39, "muerte": "luciano", "minuto": 3, "segundo": 24 },
+{ "id": 39, "muerte": "luciano", "minuto": 3, "segundo": 24 },
 
-{ "id mision": 40, "muerte": "luciano", "minuto": 6, "segundo": 22 },
+{ "id": 40, "muerte": "luciano", "minuto": 6, "segundo": 22 },
 
-{ "id mision": 40, "muerte": "luciano", "minuto": 12, "segundo": 22 },
+{ "id": 40, "muerte": "luciano", "minuto": 12, "segundo": 22 },
 
-{ "id mision": 41, "muerte": "luciano", "minuto": 1, "segundo": 57 },
+{ "id": 41, "muerte": "luciano", "minuto": 1, "segundo": 57 },
 
-{ "id mision": 41, "muerte": "javier", "minuto": 8, "segundo": 25 },
+{ "id": 41, "muerte": "javier", "minuto": 8, "segundo": 25 },
 
-{ "id mision": 42, "muerte": "luciano", "minuto": 2, "segundo": 52 },
+{ "id": 42, "muerte": "luciano", "minuto": 2, "segundo": 52 },
 
-{ "id mision": 42, "muerte": "camilo", "minuto": 5, "segundo": 11 },
+{ "id": 42, "muerte": "camilo", "minuto": 5, "segundo": 11 },
 
-{ "id mision": 42, "muerte": "luciano", "minuto": 7, "segundo": 19 },
+{ "id": 42, "muerte": "luciano", "minuto": 7, "segundo": 19 },
 
-{ "id mision": 44, "muerte": "luciano", "minuto": 1, "segundo": 12 },
+{ "id": 44, "muerte": "luciano", "minuto": 1, "segundo": 12 },
 
-{ "id mision": 44, "muerte": "luciano", "minuto": 12, "segundo": 31 },
+{ "id": 44, "muerte": "luciano", "minuto": 12, "segundo": 31 },
 
-{ "id mision": 45, "muerte": "javier", "minuto": 6, "segundo": 20 },
+{ "id": 45, "muerte": "javier", "minuto": 6, "segundo": 20 },
 
-{ "id mision": 45, "muerte": "camilo", "minuto": 6, "segundo": 54 },
+{ "id": 45, "muerte": "camilo", "minuto": 6, "segundo": 54 },
 
-{ "id mision": 45, "muerte": "luciano", "minuto": 7, "segundo": 40 },
+{ "id": 45, "muerte": "luciano", "minuto": 7, "segundo": 40 },
 
-{ "id mision": 47, "muerte": "luciano", "minuto": 9, "segundo": 41 },
+{ "id": 47, "muerte": "luciano", "minuto": 9, "segundo": 41 },
 
-{ "id mision": 47, "muerte": "luciano", "minuto": 12, "segundo": 52 },
+{ "id": 47, "muerte": "luciano", "minuto": 12, "segundo": 52 },
 
-{ "id mision": 48, "muerte": "camilo", "minuto": 1, "segundo": 41 },
+{ "id": 48, "muerte": "camilo", "minuto": 1, "segundo": 41 },
 
-{ "id mision": 48, "muerte": "luciano", "minuto": 2, "segundo": 25 },
+{ "id": 48, "muerte": "luciano", "minuto": 2, "segundo": 25 },
 
-{ "id mision": 48, "muerte": "camilo", "minuto": 2, "segundo": 41 },
+{ "id": 48, "muerte": "camilo", "minuto": 2, "segundo": 41 },
 
-{ "id mision": 49, "muerte": "camilo", "minuto": 5, "segundo": 58 },
+{ "id": 49, "muerte": "camilo", "minuto": 5, "segundo": 58 },
 
-{ "id mision": 49, "muerte": "luciano", "minuto": 13, "segundo": 30 },
+{ "id": 49, "muerte": "luciano", "minuto": 13, "segundo": 30 },
 
-{ "id mision": 49, "muerte": "camilo", "minuto": 17, "segundo": 1 },
+{ "id": 49, "muerte": "camilo", "minuto": 17, "segundo": 1 },
 
-{ "id mision": 50, "muerte": "luciano", "minuto": 3, "segundo": 5 },
+{ "id": 50, "muerte": "luciano", "minuto": 3, "segundo": 5 },
 
-{ "id mision": 50, "muerte": "luciano", "minuto": 9, "segundo": 18 },
+{ "id": 50, "muerte": "luciano", "minuto": 9, "segundo": 18 },
 
-{ "id mision": 50, "muerte": "camilo", "minuto": 9, "segundo": 24 },
+{ "id": 50, "muerte": "camilo", "minuto": 9, "segundo": 24 },
 
-{ "id mision": 51, "muerte": "javier", "minuto": 2, "segundo": 58 },
+{ "id": 51, "muerte": "javier", "minuto": 2, "segundo": 58 },
 
-{ "id mision": 51, "muerte": "luciano", "minuto": 9, "segundo": 35 },
+{ "id": 51, "muerte": "luciano", "minuto": 9, "segundo": 35 },
 
-{ "id mision": 52, "muerte": "camilo", "minuto": 2, "segundo": 42 },
+{ "id": 52, "muerte": "camilo", "minuto": 2, "segundo": 42 },
 
-{ "id mision": 52, "muerte": "luciano", "minuto": 2, "segundo": 48 },
+{ "id": 52, "muerte": "luciano", "minuto": 2, "segundo": 48 },
 
-{ "id mision": 52, "muerte": "luciano", "minuto": 4, "segundo": 37 },
+{ "id": 52, "muerte": "luciano", "minuto": 4, "segundo": 37 },
 
-{ "id mision": 53, "muerte": "luciano", "minuto": 12, "segundo": 36 },
+{ "id": 53, "muerte": "luciano", "minuto": 12, "segundo": 36 },
 
-{ "id mision": 54, "muerte": "luciano", "minuto": 1, "segundo": 19 },
+{ "id": 54, "muerte": "luciano", "minuto": 1, "segundo": 19 },
 
-{ "id mision": 54, "muerte": "luciano", "minuto": 3, "segundo": 47 },
+{ "id": 54, "muerte": "luciano", "minuto": 3, "segundo": 47 },
 
-{ "id mision": 54, "muerte": "luciano", "minuto": 5, "segundo": 43 },
+{ "id": 54, "muerte": "luciano", "minuto": 5, "segundo": 43 },
 
-{ "id mision": 55, "muerte": "javier", "minuto": 7, "segundo": 22 },
+{ "id": 55, "muerte": "javier", "minuto": 7, "segundo": 22 },
 
-{ "id mision": 56, "muerte": "camilo", "minuto": 3, "segundo": 3 },
+{ "id": 56, "muerte": "camilo", "minuto": 3, "segundo": 3 },
 
-{ "id mision": 56, "muerte": "luciano", "minuto": 8, "segundo": 27 },
+{ "id": 56, "muerte": "luciano", "minuto": 8, "segundo": 27 },
 
-{ "id mision": 56, "muerte": "camilo", "minuto": 8, "segundo": 38 },
+{ "id": 56, "muerte": "camilo", "minuto": 8, "segundo": 38 },
 
-{ "id mision": 57, "muerte": "luciano", "minuto": 2, "segundo": 49 },
+{ "id": 57, "muerte": "luciano", "minuto": 2, "segundo": 49 },
 
-{ "id mision": 57, "muerte": "luciano", "minuto": 5, "segundo": 2 },
+{ "id": 57, "muerte": "luciano", "minuto": 5, "segundo": 2 },
 
-{ "id mision": 57, "muerte": "luciano", "minuto": 9, "segundo": 59 },
+{ "id": 57, "muerte": "luciano", "minuto": 9, "segundo": 59 },
 
-{ "id mision": 58, "muerte": "javier", "minuto": 5, "segundo": 8 },
+{ "id": 58, "muerte": "javier", "minuto": 5, "segundo": 8 },
 
-{ "id mision": 58, "muerte": "franco", "minuto": 10, "segundo": 23 },
+{ "id": 58, "muerte": "franco", "minuto": 10, "segundo": 23 },
 
-{ "id mision": 58, "muerte": "luciano", "minuto": 11, "segundo": 2 },
+{ "id": 58, "muerte": "luciano", "minuto": 11, "segundo": 2 },
 
-{ "id mision": 59, "muerte": "franco", "minuto": 1, "segundo": 51 },
+{ "id": 59, "muerte": "franco", "minuto": 1, "segundo": 51 },
 
-{ "id mision": 59, "muerte": "javier", "minuto": 9, "segundo": 20 },
+{ "id": 59, "muerte": "javier", "minuto": 9, "segundo": 20 },
 
-{ "id mision": 59, "muerte": "luciano", "minuto": 9, "segundo": 43 },
+{ "id": 59, "muerte": "luciano", "minuto": 9, "segundo": 43 },
 
-{ "id mision": 60, "muerte": "franco", "minuto": 4, "segundo": 44 },
+{ "id": 60, "muerte": "franco", "minuto": 4, "segundo": 44 },
 
-{ "id mision": 60, "muerte": "franco", "minuto": 10, "segundo": 27 },
+{ "id": 60, "muerte": "franco", "minuto": 10, "segundo": 27 },
 
-{ "id mision": 60, "muerte": "luciano", "minuto": 10, "segundo": 44 },
+{ "id": 60, "muerte": "luciano", "minuto": 10, "segundo": 44 },
 
-{ "id mision": 61, "muerte": "camilo", "minuto": 1, "segundo": 51 },
+{ "id": 61, "muerte": "camilo", "minuto": 1, "segundo": 51 },
 
-{ "id mision": 61, "muerte": "franco", "minuto": 2, "segundo": 51 },
+{ "id": 61, "muerte": "franco", "minuto": 2, "segundo": 51 },
 
-{ "id mision": 61, "muerte": "camilo", "minuto": 9, "segundo": 21 },
+{ "id": 61, "muerte": "camilo", "minuto": 9, "segundo": 21 },
 
-{ "id mision": 62, "muerte": "luciano", "minuto": 5, "segundo": 34 },
+{ "id": 62, "muerte": "luciano", "minuto": 5, "segundo": 34 },
 
-{ "id mision": 62, "muerte": "franco", "minuto": 5, "segundo": 34 },
+{ "id": 62, "muerte": "franco", "minuto": 5, "segundo": 34 },
 
-{ "id mision": 62, "muerte": "luciano", "minuto": 12, "segundo": 23 },
+{ "id": 62, "muerte": "luciano", "minuto": 12, "segundo": 23 },
 
-{ "id mision": 63, "muerte": "javier", "minuto": 2, "segundo": 22 },
+{ "id": 63, "muerte": "javier", "minuto": 2, "segundo": 22 },
 
-{ "id mision": 63, "muerte": "camilo", "minuto": 4, "segundo": 53 },
+{ "id": 63, "muerte": "camilo", "minuto": 4, "segundo": 53 },
 
-{ "id mision": 63, "muerte": "camilo", "minuto": 9, "segundo": 15 },
+{ "id": 63, "muerte": "camilo", "minuto": 9, "segundo": 15 },
 
-{ "id mision": 64, "muerte": "luciano", "minuto": 11, "segundo": 11 },
+{ "id": 64, "muerte": "luciano", "minuto": 11, "segundo": 11 },
 
-{ "id mision": 64, "muerte": "luciano", "minuto": 13, "segundo": 6 },
+{ "id": 64, "muerte": "luciano", "minuto": 13, "segundo": 6 },
 
-{ "id mision": 64, "muerte": "luciano", "minuto": 18, "segundo": 40 },
+{ "id": 64, "muerte": "luciano", "minuto": 18, "segundo": 40 },
 
-{ "id mision": 65, "muerte": "luciano", "minuto": 5, "segundo": 59 },
+{ "id": 65, "muerte": "luciano", "minuto": 5, "segundo": 59 },
 
-{ "id mision": 65, "muerte": "luciano", "minuto": 12, "segundo": 6 },
+{ "id": 65, "muerte": "luciano", "minuto": 12, "segundo": 6 },
 
-{ "id mision": 65, "muerte": "javier", "minuto": 13, "segundo": 38 },
+{ "id": 65, "muerte": "javier", "minuto": 13, "segundo": 38 },
 
-{ "id mision": 66, "muerte": "franco", "minuto": 2, "segundo": 14 },
+{ "id": 66, "muerte": "franco", "minuto": 2, "segundo": 14 },
 
-{ "id mision": 66, "muerte": "camilo", "minuto": 8, "segundo": 1 },
+{ "id": 66, "muerte": "camilo", "minuto": 8, "segundo": 1 },
 
-{ "id mision": 66, "muerte": "luciano", "minuto": 8, "segundo": 41 },
+{ "id": 66, "muerte": "luciano", "minuto": 8, "segundo": 41 },
 
-{ "id mision": 67, "muerte": "luciano", "minuto": 10, "segundo": 50 },
+{ "id": 67, "muerte": "luciano", "minuto": 10, "segundo": 50 },
 
-{ "id mision": 67, "muerte": "luciano", "minuto": 12, "segundo": 32 },
+{ "id": 67, "muerte": "luciano", "minuto": 12, "segundo": 32 },
 
-{ "id mision": 67, "muerte": "camilo", "minuto": 16, "segundo": 1 },
+{ "id": 67, "muerte": "camilo", "minuto": 16, "segundo": 1 },
 
-{ "id mision": 68, "muerte": "javier", "minuto": 7, "segundo": 30 },
+{ "id": 68, "muerte": "javier", "minuto": 7, "segundo": 30 },
 
-{ "id mision": 68, "muerte": "luciano", "minuto": 12, "segundo": 56 },
+{ "id": 68, "muerte": "luciano", "minuto": 12, "segundo": 56 },
 
-{ "id mision": 68, "muerte": "camilo", "minuto": 14, "segundo": 9 },
+{ "id": 68, "muerte": "camilo", "minuto": 14, "segundo": 9 },
 
-{ "id mision": 69, "muerte": "franco", "minuto": 6, "segundo": 22 },
+{ "id": 69, "muerte": "franco", "minuto": 6, "segundo": 22 },
 
-{ "id mision": 69, "muerte": "camilo", "minuto": 7, "segundo": 54 },
+{ "id": 69, "muerte": "camilo", "minuto": 7, "segundo": 54 },
 
-{ "id mision": 69, "muerte": "luciano", "minuto": 11, "segundo": 14 },
+{ "id": 69, "muerte": "luciano", "minuto": 11, "segundo": 14 },
 
-{ "id mision": 70, "muerte": "javier", "minuto": 4, "segundo": 59 },
+{ "id": 70, "muerte": "javier", "minuto": 4, "segundo": 59 },
 
-{ "id mision": 70, "muerte": "camilo", "minuto": 8, "segundo": 20 },
+{ "id": 70, "muerte": "camilo", "minuto": 8, "segundo": 20 },
 
-{ "id mision": 70, "muerte": "camilo", "minuto": 9, "segundo": 57 },
+{ "id": 70, "muerte": "camilo", "minuto": 9, "segundo": 57 },
 
-{ "id mision": 71, "muerte": "camilo", "minuto": 14, "segundo": 14 },
+{ "id": 71, "muerte": "camilo", "minuto": 14, "segundo": 14 },
 
-{ "id mision": 71, "muerte": "javier", "minuto": 14, "segundo": 31 },
+{ "id": 71, "muerte": "javier", "minuto": 14, "segundo": 31 },
 
-{ "id mision": 71, "muerte": "camilo", "minuto": 15, "segundo": 38 },
+{ "id": 71, "muerte": "camilo", "minuto": 15, "segundo": 38 },
 
-{ "id mision": 72, "muerte": "javier", "minuto": 14, "segundo": 51 },
+{ "id": 72, "muerte": "javier", "minuto": 14, "segundo": 51 },
 
-{ "id mision": 73, "muerte": "javier", "minuto": 0, "segundo": 42 },
+{ "id": 73, "muerte": "javier", "minuto": 0, "segundo": 42 },
 
-{ "id mision": 73, "muerte": "javier", "minuto": 1, "segundo": 19 },
+{ "id": 73, "muerte": "javier", "minuto": 1, "segundo": 19 },
 
-{ "id mision": 73, "muerte": "luciano", "minuto": 6, "segundo": 21 },
+{ "id": 73, "muerte": "luciano", "minuto": 6, "segundo": 21 },
 
-{ "id mision": 74, "muerte": "luciano", "minuto": 6, "segundo": 19 },
+{ "id": 74, "muerte": "luciano", "minuto": 6, "segundo": 19 },
 
-{ "id mision": 74, "muerte": "luciano", "minuto": 9, "segundo": 44 },
+{ "id": 74, "muerte": "luciano", "minuto": 9, "segundo": 44 },
 
-{ "id mision": 74, "muerte": "javier", "minuto": 11, "segundo": 12 },
+{ "id": 74, "muerte": "javier", "minuto": 11, "segundo": 12 },
 
-{ "id mision": 76, "muerte": "franco", "minuto": 7, "segundo": 4 },
+{ "id": 76, "muerte": "franco", "minuto": 7, "segundo": 4 },
 
-{ "id mision": 76, "muerte": "camilo", "minuto": 7, "segundo": 47 },
+{ "id": 76, "muerte": "camilo", "minuto": 7, "segundo": 47 },
 
-{ "id mision": 77, "muerte": "luciano", "minuto": 1, "segundo": 51 },
+{ "id": 77, "muerte": "luciano", "minuto": 1, "segundo": 51 },
 
-{ "id mision": 77, "muerte": "camilo", "minuto": 1, "segundo": 57 },
+{ "id": 77, "muerte": "camilo", "minuto": 1, "segundo": 57 },
 
-{ "id mision": 77, "muerte": "luciano", "minuto": 2, "segundo": 56 },
+{ "id": 77, "muerte": "luciano", "minuto": 2, "segundo": 56 },
 
-{ "id mision": 78, "muerte": "javier", "minuto": 12, "segundo": 1 },
+{ "id": 78, "muerte": "javier", "minuto": 12, "segundo": 1 },
 
-{ "id mision": 78, "muerte": "franco", "minuto": 14, "segundo": 58 },
+{ "id": 78, "muerte": "franco", "minuto": 14, "segundo": 58 },
 
-{ "id mision": 78, "muerte": "javier", "minuto": 17, "segundo": 33 },
+{ "id": 78, "muerte": "javier", "minuto": 17, "segundo": 33 },
 
-{ "id mision": 81, "muerte": "javier", "minuto": 8, "segundo": 43 },
+{ "id": 81, "muerte": "javier", "minuto": 8, "segundo": 43 },
 
-{ "id mision": 81, "muerte": "franco", "minuto": 11, "segundo": 53 },
+{ "id": 81, "muerte": "franco", "minuto": 11, "segundo": 53 },
 
-{ "id mision": 82, "muerte": "luciano", "minuto": 1, "segundo": 41 },
+{ "id": 82, "muerte": "luciano", "minuto": 1, "segundo": 41 },
 
-{ "id mision": 82, "muerte": "luciano", "minuto": 3, "segundo": 49 },
+{ "id": 82, "muerte": "luciano", "minuto": 3, "segundo": 49 },
 
-{ "id mision": 82, "muerte": "javier", "minuto": 8, "segundo": 1 },
+{ "id": 82, "muerte": "javier", "minuto": 8, "segundo": 1 },
 
-{ "id mision": 83, "muerte": "javier", "minuto": 3, "segundo": 56 },
+{ "id": 83, "muerte": "javier", "minuto": 3, "segundo": 56 },
 
-{ "id mision": 83, "muerte": "camilo", "minuto": 7, "segundo": 47 },
+{ "id": 83, "muerte": "camilo", "minuto": 7, "segundo": 47 },
 
-{ "id mision": 83, "muerte": "javier", "minuto": 8, "segundo": 28 },
+{ "id": 83, "muerte": "javier", "minuto": 8, "segundo": 28 },
 
-{ "id mision": 85, "muerte": "javier", "minuto": 9, "segundo": 20 },
+{ "id": 85, "muerte": "javier", "minuto": 9, "segundo": 20 },
 
-{ "id mision": 85, "muerte": "javier", "minuto": 15, "segundo": 35 },
+{ "id": 85, "muerte": "javier", "minuto": 15, "segundo": 35 },
 
-{ "id mision": 85, "muerte": "camilo", "minuto": 19, "segundo": 21 },
+{ "id": 85, "muerte": "camilo", "minuto": 19, "segundo": 21 },
 
-{ "id mision": 86, "muerte": "luciano", "minuto": 10, "segundo": 39 },
+{ "id": 86, "muerte": "luciano", "minuto": 10, "segundo": 39 },
 
-{ "id mision": 87, "muerte": "luciano", "minuto": 13, "segundo": 23 },
+{ "id": 87, "muerte": "luciano", "minuto": 13, "segundo": 23 },
 
-{ "id mision": 87, "muerte": "luciano", "minuto": 14, "segundo": 45 },
+{ "id": 87, "muerte": "luciano", "minuto": 14, "segundo": 45 },
 
-{ "id mision": 87, "muerte": "franco", "minuto": 16, "segundo": 43 },
+{ "id": 87, "muerte": "franco", "minuto": 16, "segundo": 43 },
 
-{ "id mision": 88, "muerte": "camilo", "minuto": 7, "segundo": 19 },
+{ "id": 88, "muerte": "camilo", "minuto": 7, "segundo": 19 },
 
-{ "id mision": 88, "muerte": "camilo", "minuto": 9, "segundo": 56 },
+{ "id": 88, "muerte": "camilo", "minuto": 9, "segundo": 56 },
 
-{ "id mision": 88, "muerte": "franco", "minuto": 11, "segundo": 16 },
+{ "id": 88, "muerte": "franco", "minuto": 11, "segundo": 16 },
 
-{ "id mision": 97, "muerte": "luciano", "minuto": 7, "segundo": 13 },
+{ "id": 97, "muerte": "luciano", "minuto": 7, "segundo": 13 },
 
-{ "id mision": 119, "muerte": "franco", "minuto": 4, "segundo": 57 },
+{ "id": 119, "muerte": "franco", "minuto": 4, "segundo": 57 },
 
-{ "id mision": 120, "muerte": "luciano", "minuto": 9, "segundo": 3 },
+{ "id": 120, "muerte": "luciano", "minuto": 9, "segundo": 3 },
 
-{ "id mision": 120, "muerte": "camilo", "minuto": 12, "segundo": 7 },
+{ "id": 120, "muerte": "camilo", "minuto": 12, "segundo": 7 },
 
-{ "id mision": 122, "muerte": "camilo", "minuto": 7, "segundo": 2 },
+{ "id": 122, "muerte": "camilo", "minuto": 7, "segundo": 2 },
 
-{ "id mision": 124, "muerte": "camilo", "minuto": 11, "segundo": 52 },
+{ "id": 124, "muerte": "camilo", "minuto": 11, "segundo": 52 },
 
-{ "id mision": 125, "muerte": "camilo", "minuto": 1, "segundo": 23 },
+{ "id": 125, "muerte": "camilo", "minuto": 1, "segundo": 23 },
 
-{ "id mision": 125, "muerte": "camilo", "minuto": 3, "segundo": 30 },
+{ "id": 125, "muerte": "camilo", "minuto": 3, "segundo": 30 },
 
-{ "id mision": 125, "muerte": "franco", "minuto": 9, "segundo": 15 },
+{ "id": 125, "muerte": "franco", "minuto": 9, "segundo": 15 },
 
-{ "id mision": 126, "muerte": "camilo", "minuto": 1, "segundo": 7 },
+{ "id": 126, "muerte": "camilo", "minuto": 1, "segundo": 7 },
 
-{ "id mision": 129, "muerte": "camilo", "minuto": 4, "segundo": 21 },
+{ "id": 129, "muerte": "camilo", "minuto": 4, "segundo": 21 },
 
-{ "id mision": 134, "muerte": "javier", "minuto": 1, "segundo": 31 },
+{ "id": 134, "muerte": "javier", "minuto": 1, "segundo": 31 },
 
-{ "id mision": 135, "muerte": "luciano", "minuto": 5, "segundo": 15 },
+{ "id": 135, "muerte": "luciano", "minuto": 5, "segundo": 15 },
 
-{ "id mision": 136, "muerte": "luciano", "minuto": 2, "segundo": 39 },
+{ "id": 136, "muerte": "luciano", "minuto": 2, "segundo": 39 },
 
-{ "id mision": 136, "muerte": "camilo", "minuto": 4, "segundo": 17 },
+{ "id": 136, "muerte": "camilo", "minuto": 4, "segundo": 17 },
 
-{ "id mision": 137, "muerte": "camilo", "minuto": 2, "segundo": 45 },
+{ "id": 137, "muerte": "camilo", "minuto": 2, "segundo": 45 },
 
-{ "id mision": 137, "muerte": "luciano", "minuto": 5, "segundo": 30 },
+{ "id": 137, "muerte": "luciano", "minuto": 5, "segundo": 30 },
 
-{ "id mision": 138, "muerte": "franco", "minuto": 11, "segundo": 43 },
+{ "id": 138, "muerte": "franco", "minuto": 11, "segundo": 43 },
 
-{ "id mision": 139, "muerte": "luciano", "minuto": 2, "segundo": 23 },
+{ "id": 139, "muerte": "luciano", "minuto": 2, "segundo": 23 },
 
-{ "id mision": 139, "muerte": "franco", "minuto": 2, "segundo": 26 },
+{ "id": 139, "muerte": "franco", "minuto": 2, "segundo": 26 },
 
-{ "id mision": 140, "muerte": "camilo", "minuto": 11, "segundo": 37 },
+{ "id": 140, "muerte": "camilo", "minuto": 11, "segundo": 37 },
 
-{ "id mision": 141, "muerte": "camilo", "minuto": 8, "segundo": 34 },
+{ "id": 141, "muerte": "camilo", "minuto": 8, "segundo": 34 },
 
-{ "id mision": 141, "muerte": "luciano", "minuto": 16, "segundo": 29 },
+{ "id": 141, "muerte": "luciano", "minuto": 16, "segundo": 29 },
 
-{ "id mision": 142, "muerte": "camilo", "minuto": 1, "segundo": 4 },
+{ "id": 142, "muerte": "camilo", "minuto": 1, "segundo": 4 },
 
-{ "id mision": 142, "muerte": "luciano", "minuto": 2, "segundo": 8 },
+{ "id": 142, "muerte": "luciano", "minuto": 2, "segundo": 8 },
 
-{ "id mision": 142, "muerte": "camilo", "minuto": 5, "segundo": 21 },
+{ "id": 142, "muerte": "camilo", "minuto": 5, "segundo": 21 },
 
-{ "id mision": 143, "muerte": "camilo", "minuto": 5, "segundo": 34 },
+{ "id": 143, "muerte": "camilo", "minuto": 5, "segundo": 34 },
 
-{ "id mision": 143, "muerte": "javier", "minuto": 13, "segundo": 42 },
+{ "id": 143, "muerte": "javier", "minuto": 13, "segundo": 42 },
 
-{ "id mision": 143, "muerte": "luciano", "minuto": 16, "segundo": 4 },
+{ "id": 143, "muerte": "luciano", "minuto": 16, "segundo": 4 },
 
-{ "id mision": 144, "muerte": "luciano", "minuto": 10, "segundo": 7 },
+{ "id": 144, "muerte": "luciano", "minuto": 10, "segundo": 7 },
 
-{ "id mision": 144, "muerte": "camilo", "minuto": 10, "segundo": 28 },
+{ "id": 144, "muerte": "camilo", "minuto": 10, "segundo": 28 },
 
-{ "id mision": 144, "muerte": "camilo", "minuto": 15, "segundo": 7 },
+{ "id": 144, "muerte": "camilo", "minuto": 15, "segundo": 7 },
 
-{ "id mision": 145, "muerte": "camilo", "minuto": 3, "segundo": 46 },
+{ "id": 145, "muerte": "camilo", "minuto": 3, "segundo": 46 },
 
-{ "id mision": 145, "muerte": "camilo", "minuto": 4, "segundo": 58 },
+{ "id": 145, "muerte": "camilo", "minuto": 4, "segundo": 58 },
 
-{ "id mision": 145, "muerte": "camilo", "minuto": 9, "segundo": 14 },
+{ "id": 145, "muerte": "camilo", "minuto": 9, "segundo": 14 },
 
-{ "id mision": 146, "muerte": "camilo", "minuto": 1, "segundo": 18 },
+{ "id": 146, "muerte": "camilo", "minuto": 1, "segundo": 18 },
 
-{ "id mision": 146, "muerte": "camilo", "minuto": 3, "segundo": 17 },
+{ "id": 146, "muerte": "camilo", "minuto": 3, "segundo": 17 },
 
-{ "id mision": 146, "muerte": "luciano", "minuto": 15, "segundo": 2 },
+{ "id": 146, "muerte": "luciano", "minuto": 15, "segundo": 2 },
 
-{ "id mision": 147, "muerte": "camilo", "minuto": 5, "segundo": 28 },
+{ "id": 147, "muerte": "camilo", "minuto": 5, "segundo": 28 },
 
-{ "id mision": 148, "muerte": "luciano", "minuto": 4, "segundo": 23 },
+{ "id": 148, "muerte": "luciano", "minuto": 4, "segundo": 23 },
 
-{ "id mision": 149, "muerte": "camilo", "minuto": 2, "segundo": 29 },
+{ "id": 149, "muerte": "camilo", "minuto": 2, "segundo": 29 },
 
-{ "id mision": 149, "muerte": "luciano", "minuto": 5, "segundo": 56 },
+{ "id": 149, "muerte": "luciano", "minuto": 5, "segundo": 56 },
 
-{ "id mision": 151, "muerte": "camilo", "minuto": 5, "segundo": 19 },
+{ "id": 151, "muerte": "camilo", "minuto": 5, "segundo": 19 },
 
-{ "id mision": 152, "muerte": "camilo", "minuto": 7, "segundo": 55 },
+{ "id": 152, "muerte": "camilo", "minuto": 7, "segundo": 55 },
 
-{ "id mision": 153, "muerte": "luciano", "minuto": 5, "segundo": 21 },
+{ "id": 153, "muerte": "luciano", "minuto": 5, "segundo": 21 },
 
-{ "id mision": 153, "muerte": "camilo", "minuto": 7, "segundo": 28 },
+{ "id": 153, "muerte": "camilo", "minuto": 7, "segundo": 28 },
 
-{ "id mision": 153, "muerte": "luciano", "minuto": 7, "segundo": 52 },
+{ "id": 153, "muerte": "luciano", "minuto": 7, "segundo": 52 },
 
-{ "id mision": 154, "muerte": "camilo", "minuto": 8, "segundo": 41 },
+{ "id": 154, "muerte": "camilo", "minuto": 8, "segundo": 41 },
 
-{ "id mision": 154, "muerte": "luciano", "minuto": 10, "segundo": 19 },
+{ "id": 154, "muerte": "luciano", "minuto": 10, "segundo": 19 },
 
-{ "id mision": 154, "muerte": "luciano", "minuto": 14, "segundo": 59 },
+{ "id": 154, "muerte": "luciano", "minuto": 14, "segundo": 59 },
 
-{ "id mision": 155, "muerte": "luciano", "minuto": 13, "segundo": 45 },
+{ "id": 155, "muerte": "luciano", "minuto": 13, "segundo": 45 },
 
-{ "id mision": 155, "muerte": "camilo", "minuto": 21, "segundo": 21 },
+{ "id": 155, "muerte": "camilo", "minuto": 21, "segundo": 21 },
 
-{ "id mision": 156, "muerte": "luciano", "minuto": 7, "segundo": 28 },
+{ "id": 156, "muerte": "luciano", "minuto": 7, "segundo": 28 },
 
-{ "id mision": 157, "muerte": "luciano", "minuto": 6, "segundo": 39 },
+{ "id": 157, "muerte": "luciano", "minuto": 6, "segundo": 39 },
 
-{ "id mision": 157, "muerte": "luciano", "minuto": 16, "segundo": 49 },
+{ "id": 157, "muerte": "luciano", "minuto": 16, "segundo": 49 },
 
-{ "id mision": 159, "muerte": "camilo", "minuto": 4, "segundo": 42 },
+{ "id": 159, "muerte": "camilo", "minuto": 4, "segundo": 42 },
 
-{ "id mision": 160, "muerte": "luciano", "minuto": 1, "segundo": 20 },
+{ "id": 160, "muerte": "luciano", "minuto": 1, "segundo": 20 },
 
-{ "id mision": 160, "muerte": "camilo", "minuto": 7, "segundo": 5 },
+{ "id": 160, "muerte": "camilo", "minuto": 7, "segundo": 5 },
 
-{ "id mision": 160, "muerte": "javier", "minuto": 7, "segundo": 27 },
+{ "id": 160, "muerte": "javier", "minuto": 7, "segundo": 27 },
 
-{ "id mision": 161, "muerte": "camilo", "minuto": 2, "segundo": 7 },
+{ "id": 161, "muerte": "camilo", "minuto": 2, "segundo": 7 },
 
-{ "id mision": 161, "muerte": "javier", "minuto": 6, "segundo": 9 },
+{ "id": 161, "muerte": "javier", "minuto": 6, "segundo": 9 },
 
-{ "id mision": 162, "muerte": "javier", "minuto": 1, "segundo": 52 },
+{ "id": 162, "muerte": "javier", "minuto": 1, "segundo": 52 },
 
-{ "id mision": 162, "muerte": "camilo", "minuto": 4, "segundo": 13 },
+{ "id": 162, "muerte": "camilo", "minuto": 4, "segundo": 13 },
 
-{ "id mision": 162, "muerte": "luciano", "minuto": 6, "segundo": 43 },
+{ "id": 162, "muerte": "luciano", "minuto": 6, "segundo": 43 },
 
-{ "id mision": 163, "muerte": "camilo", "minuto": 2, "segundo": 26 },
+{ "id": 163, "muerte": "camilo", "minuto": 2, "segundo": 26 },
 
-{ "id mision": 163, "muerte": "franco", "minuto": 14, "segundo": 31 },
+{ "id": 163, "muerte": "franco", "minuto": 14, "segundo": 31 },
 
-{ "id mision": 164, "muerte": "camilo", "minuto": 2, "segundo": 9 },
+{ "id": 164, "muerte": "camilo", "minuto": 2, "segundo": 9 },
 
-{ "id mision": 164, "muerte": "camilo", "minuto": 4, "segundo": 14 },
+{ "id": 164, "muerte": "camilo", "minuto": 4, "segundo": 14 },
 
-{ "id mision": 164, "muerte": "camilo", "minuto": 13, "segundo": 15 },
+{ "id": 164, "muerte": "camilo", "minuto": 13, "segundo": 15 },
 
-{ "id mision": 165, "muerte": "camilo", "minuto": 6, "segundo": 12 },
+{ "id": 165, "muerte": "camilo", "minuto": 6, "segundo": 12 },
 
-{ "id mision": 165, "muerte": "luciano", "minuto": 8, "segundo": 34 },
+{ "id": 165, "muerte": "luciano", "minuto": 8, "segundo": 34 },
 
-{ "id mision": 165, "muerte": "camilo", "minuto": 12, "segundo": 41 },
+{ "id": 165, "muerte": "camilo", "minuto": 12, "segundo": 41 },
 
-{ "id mision": 166, "muerte": "luciano", "minuto": 3, "segundo": 46 },
+{ "id": 166, "muerte": "luciano", "minuto": 3, "segundo": 46 },
 
-{ "id mision": 167, "muerte": "camilo", "minuto": 3, "segundo": 37 },
+{ "id": 167, "muerte": "camilo", "minuto": 3, "segundo": 37 },
 
-{ "id mision": 167, "muerte": "camilo", "minuto": 14, "segundo": 17 },
+{ "id": 167, "muerte": "camilo", "minuto": 14, "segundo": 17 },
 
-{ "id mision": 168, "muerte": "franco", "minuto": 1, "segundo": 43 },
+{ "id": 168, "muerte": "franco", "minuto": 1, "segundo": 43 },
 
-{ "id mision": 168, "muerte": "camilo", "minuto": 1, "segundo": 56 },
+{ "id": 168, "muerte": "camilo", "minuto": 1, "segundo": 56 },
 
-{ "id mision": 168, "muerte": "luciano", "minuto": 2, "segundo": 0 },
+{ "id": 168, "muerte": "luciano", "minuto": 2, "segundo": 0 },
 
-{ "id mision": 170, "muerte": "luciano", "minuto": 3, "segundo": 39 },
+{ "id": 170, "muerte": "luciano", "minuto": 3, "segundo": 39 },
 
-{ "id mision": 170, "muerte": "camilo", "minuto": 3, "segundo": 39 },
+{ "id": 170, "muerte": "camilo", "minuto": 3, "segundo": 39 },
 
-{ "id mision": 172, "muerte": "luciano", "minuto": 0, "segundo": 47 },
+{ "id": 172, "muerte": "luciano", "minuto": 0, "segundo": 47 },
 
-{ "id mision": 172, "muerte": "javier", "minuto": 5, "segundo": 27 },
+{ "id": 172, "muerte": "javier", "minuto": 5, "segundo": 27 },
 
-{ "id mision": 172, "muerte": "luciano", "minuto": 10, "segundo": 18 },
+{ "id": 172, "muerte": "luciano", "minuto": 10, "segundo": 18 },
 
-{ "id mision": 174, "muerte": "camilo", "minuto": 2, "segundo": 19 },
+{ "id": 174, "muerte": "camilo", "minuto": 2, "segundo": 19 },
 
-{ "id mision": 174, "muerte": "camilo", "minuto": 5, "segundo": 53 },
+{ "id": 174, "muerte": "camilo", "minuto": 5, "segundo": 53 },
 
-{ "id mision": 174, "muerte": "camilo", "minuto": 7, "segundo": 34 },
+{ "id": 174, "muerte": "camilo", "minuto": 7, "segundo": 34 },
 
-{ "id mision": 175, "muerte": "camilo", "minuto": 1, "segundo": 44 },
+{ "id": 175, "muerte": "camilo", "minuto": 1, "segundo": 44 },
 
-{ "id mision": 175, "muerte": "camilo", "minuto": 2, "segundo": 53 },
+{ "id": 175, "muerte": "camilo", "minuto": 2, "segundo": 53 },
 
-{ "id mision": 175, "muerte": "luciano", "minuto": 5, "segundo": 52 },
+{ "id": 175, "muerte": "luciano", "minuto": 5, "segundo": 52 },
 
-{ "id mision": 176, "muerte": "camilo", "minuto": 5, "segundo": 16 },
+{ "id": 176, "muerte": "camilo", "minuto": 5, "segundo": 16 },
 
-{ "id mision": 176, "muerte": "luciano", "minuto": 8, "segundo": 19 },
+{ "id": 176, "muerte": "luciano", "minuto": 8, "segundo": 19 },
 
-{ "id mision": 176, "muerte": "luciano", "minuto": 9, "segundo": 15 },
+{ "id": 176, "muerte": "luciano", "minuto": 9, "segundo": 15 },
 
-{ "id mision": 177, "muerte": "camilo", "minuto": 3, "segundo": 32 },
+{ "id": 177, "muerte": "camilo", "minuto": 3, "segundo": 32 },
 
-{ "id mision": 177, "muerte": "luciano", "minuto": 9, "segundo": 14 },
+{ "id": 177, "muerte": "luciano", "minuto": 9, "segundo": 14 },
 
-{ "id mision": 177, "muerte": "javier", "minuto": 10, "segundo": 27 },
+{ "id": 177, "muerte": "javier", "minuto": 10, "segundo": 27 },
 
-{ "id mision": 178, "muerte": "luciano", "minuto": 7, "segundo": 50 },
+{ "id": 178, "muerte": "luciano", "minuto": 7, "segundo": 50 },
 
-{ "id mision": 178, "muerte": "luciano", "minuto": 9, "segundo": 0 },
+{ "id": 178, "muerte": "luciano", "minuto": 9, "segundo": 0 },
 
-{ "id mision": 178, "muerte": "luciano", "minuto": 16, "segundo": 42 },
+{ "id": 178, "muerte": "luciano", "minuto": 16, "segundo": 42 },
 
-{ "id mision": 179, "muerte": "javier", "minuto": 16, "segundo": 50 },
+{ "id": 179, "muerte": "javier", "minuto": 16, "segundo": 50 },
 
-{ "id mision": 179, "muerte": "javier", "minuto": 18, "segundo": 32 },
+{ "id": 179, "muerte": "javier", "minuto": 18, "segundo": 32 },
 
-{ "id mision": 179, "muerte": "luciano", "minuto": 18, "segundo": 35 },
+{ "id": 179, "muerte": "luciano", "minuto": 18, "segundo": 35 },
 
-{ "id mision": 180, "muerte": "camilo", "minuto": 5, "segundo": 15 },
+{ "id": 180, "muerte": "camilo", "minuto": 5, "segundo": 15 },
 
-{ "id mision": 180, "muerte": "luciano", "minuto": 15, "segundo": 1 },
+{ "id": 180, "muerte": "luciano", "minuto": 15, "segundo": 1 },
 
-{ "id mision": 180, "muerte": "javier", "minuto": 16, "segundo": 45 },
+{ "id": 180, "muerte": "javier", "minuto": 16, "segundo": 45 },
 
-{ "id mision": 181, "muerte": "javier", "minuto": 3, "segundo": 58 }]
+{ "id": 181, "muerte": "javier", "minuto": 3, "segundo": 58 }]

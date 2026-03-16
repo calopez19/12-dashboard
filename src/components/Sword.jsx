@@ -1,6 +1,6 @@
 import { Background } from "victory";
 import sword from "../assets/espada.png";
-
+import { PileChart } from "./PileChart";
 export function Sword({ daño1 = 1, daño2 = 2, daño3 = 3, daño4 = 4 }) {
   return (
     <div
@@ -24,7 +24,9 @@ export function Sword({ daño1 = 1, daño2 = 2, daño3 = 3, daño4 = 4 }) {
           width: "269px",
           height: "32px",
         }}
-      ></div>
+      >
+        <PileChart/>
+      </div>
     </div>
   );
 }
