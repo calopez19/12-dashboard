@@ -35,6 +35,19 @@ export function DashBoard() {
   );
   //console.log(missionlist);
 
+  const dogDamage = missionlist.reduce((acc, element) => {
+    return acc + Number(element["Daño Perros"]);
+  }, 0);
+  const Damage = missionlist.reduce((acc, element) => {
+    return acc + Number(element["Daño C"]);
+  }, 0);
+  missionlist.forEach((element) => {
+    if (typeof element["Daño C"] === 'string') {
+      console.log(typeof element["Daño C"], element.id);
+    }
+  });
+  console.log(Damage.toFixed(2));
+
   return (
     <main className="dashboardContaner">
       <section className="region left-top">
@@ -50,11 +63,11 @@ export function DashBoard() {
         />
         <Card
           title={"Tiempo Total"}
-          info={formatearTiempo(gameTimeMinutes*60  + gameTimeSeconds )}
+          info={formatearTiempo(gameTimeMinutes * 60 + gameTimeSeconds)}
           listInfo={[]}
         />
-        <Card title={"muertes"} info={1} listInfo={[]} />
-        <Card title={"muertes"} info={1} listInfo={[]} />
+        <Card title={"Daño de los perros"} info={dogDamage} listInfo={[]} />
+        <Card title={"Daño total"} info={Damage.toFixed(2)} listInfo={[]} />
         <Card title={"muertes"} info={1} listInfo={[]} />
       </section>
       <section className="region left-bottom">
@@ -88,7 +101,7 @@ export function DashBoard() {
           <InteractiveLegendChart />
         </div>
       </section>
-        
+
       <section className="region right">
         <HorizontalChart />
       </section>

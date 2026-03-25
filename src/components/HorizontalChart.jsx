@@ -5,6 +5,7 @@ import {
   VictoryAxis,
   VictoryTheme,
   VictoryLabel,
+  VictoryContainer
 } from "victory";
 import { useDataStore } from "../stores/filteredStore";
 import { useMemo } from "react";
@@ -41,49 +42,56 @@ const HorizontalChart = () => {
 
     // 4. Convertimos el objeto de conteo a un array de resultados
     // Estructura ideal para Victory: { x: "Nombre", y: Cantidad }
-    return Object.entries(counts).map(([name, count]) => ({
-      x: name,
-      y: count,
-    }));
+    return (
+      Object.entries(counts)
+        .map(([name, count]) => ({ x: name, y: count }))
+        // Ordenamos de mayor a menor
+        .sort((a, b) => a.y - b.y)
+    );
   }, [filteredGameData]);
   console.log(results);
+  const dynamicHeight = Math.max(results.length * 45, 300);
 
   return (
-    <>
-      <div style={{ height: "400px", width: "100%" }}>
+    <div style={{ 
+      height: '400px', // Altura fija del contenedor visible
+      overflowY: 'auto', // Scroll vertical
+      border: '1px solid #ccc',
+      borderRadius: '8px'
+    }}>
+      <div style={{ height: `${dynamicHeight}px` }}>
         <VictoryChart
+          horizontal
           theme={VictoryTheme.material}
-          domainPadding={20}
-          // Ajustamos el padding izquierdo para que los nombres largos no se corten
-          padding={{ top: 20, bottom: 50, left: 100, right: 20 }}
+          height={dynamicHeight} // Aplicamos la altura calculada aquí
+          width={250}
+          padding={{ top: 50, bottom: 50, left: 120, right: 40 }}
+          // Importante: usar el contenedor nativo para evitar conflictos de scroll
+          containerComponent={<VictoryContainer responsive={false} />}
         >
           <VictoryAxis
             dependentAxis
-            tickFormat={(x) => `${x}`}
-            label="Cantidad de Muertes"
-            style={{ axisLabel: { padding: 35 } }}
+            label="Kills"
+            style={{ axisLabel: { padding: 30 } }}
           />
-          <VictoryAxis
-            // Este eje mostrará los nombres de los monstruos
-            style={{ tickLabels: { fontSize: 10 } }}
+          <VictoryAxis 
+            style={{ 
+              tickLabels: { fontSize: 12, padding: 5 } 
+            }} 
           />
           <VictoryBar
-            horizontal
             data={results}
             style={{
-              data: { fill: "#c43a31", width: 15 },
-            }}
-            // Animación suave al cargar/cambiar datos
-            animate={{
-              duration: 500,
-              onLoad: { duration: 200 },
+              data: { 
+                fill: ({ datum }) => datum.y > 10 ? "#c43a31" : "#ffbb33",
+                width: 25 
+              }
             }}
             labels={({ datum }) => datum.y}
-            labelComponent={<VictoryLabel dx={10} />}
           />
         </VictoryChart>
       </div>
-    </>
+    </div>
   );
 };
 
