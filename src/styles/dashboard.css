@@ -27,7 +27,6 @@
   max-height: 100vh;
   overflow: hidden;
   margin: 0;
-
 }
 /* --- Diseño Responsivo (Móviles y Tablets pequeñas) --- */
 @media (max-width: 768px) {

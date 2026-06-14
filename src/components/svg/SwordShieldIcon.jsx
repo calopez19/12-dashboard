@@ -4,8 +4,7 @@ export const SwordShieldIcon = (props) => {
   // Aplicamos la opacidad que viene del estado de Victory (para el efecto de transparencia)
   return (
     <g 
-      transform={`translate(${x - 32}, ${y - 32}) scale(0.3)`} 
-      style={{ opacity: style.opacity }}
+      style={{ opacity: 0.7 }}
     >
       {/* Mantenemos el grupo original con su traslación negativa para centrar el dibujo */}
       <g transform="matrix(1,0,0,1,0,-960)">
@@ -13,7 +12,7 @@ export const SwordShieldIcon = (props) => {
           <path 
             id="background" 
             d="M19,1003L23,1003L23,1007L19,1007L19,1016L14,1016L14,999L19,999L19,1003ZM54.5,988.5L38.5,988.5L38.5,1004.5L54.5,1004.5L54.5,988.5Z" 
-            style={{ fillOpacity: 0.76, fill: style.fill || "black" }} 
+            style={{ fillOpacity: 0.76, fill: "black" }} 
           />
           <path d="M51.5,992.5C51.5,991.948 51.052,991.5 50.5,991.5L42.5,991.5C41.948,991.5 41.5,991.948 41.5,992.5L41.5,1000.5C41.5,1001.05 41.948,1001.5 42.5,1001.5L50.5,1001.5C51.052,1001.5 51.5,1001.05 51.5,1000.5L51.5,992.5Z" fill="#232323" />
           <path d="M19,1015L14,1015L14,1017L19,1017L19,1015ZM19,1010L14,1010L14,1013L19,1013L19,1010Z" fill="#6D6D6D" />

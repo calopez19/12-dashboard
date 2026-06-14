@@ -1,5 +1,12 @@
 import { useDataStore } from "../stores/filteredStore";
 import { useMemo } from "react";
+import { SwordShieldIcon } from "./svg/SwordShieldIcon";
+import { LanceIcon } from "./svg/LanceIcon";
+import { LongSwordIcon } from "./svg/LongSwordIcon";
+import { DualBladesIcon } from "./svg/DualBladesIcon";
+
+
+const svg = {camilo:  <SwordShieldIcon/>, franco: <LanceIcon/>, luciano: <LongSwordIcon/>, javier: <DualBladesIcon/> }
 export function HatTrick() {
   const filteredDeathData = useDataStore((state) => {
     return state.filteredDeathsData;
@@ -28,7 +35,7 @@ export function HatTrick() {
         ];
         acc.sum += 1;
       }
-      if (acc.sum === 2) {
+      if (acc.sum === 3) {
         const monstruo = filteredGamehData.find(
           (element) => element.id === acc.mision,
         ).monstruo;
@@ -41,5 +48,40 @@ export function HatTrick() {
 
     return trick;
   }, [filteredDeathData]);
-  return <></>;
+  console.log(hatTricks);
+  
+  return (
+    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
+      {Object.entries(hatTricks).map(([usuario, misiones]) => (
+        <div key={usuario} style={{ marginBottom: '20px' }}>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            {misiones.map((mision, index) => (
+              <svg key={index} width="75" height="75" viewBox="0 0 100 100">
+                {/* Círculo de fondo */}
+                <circle cx="50" cy="50" r="45" stroke="#333" strokeWidth="2" fill="transparent" />
+                
+                {/* Contenedor para el Icono: Escalamos y centramos el componente */}
+                <g transform="translate(20, 20) scale(0.9)"> 
+                  {svg[usuario]}
+                </g>
+
+                {/* Texto del número de misión en el centro/abajo */}
+                <text 
+                  x="50" 
+                  y="25" 
+                  textAnchor="middle" 
+                  fontSize="16" 
+                  fontWeight="bold" 
+                  fill="black"
+                  style={{ fontFamily: 'Arial, sans-serif' }}
+                >
+                  {mision.mision}
+                </text>
+              </svg>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }

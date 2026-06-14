@@ -9,6 +9,8 @@ import HorizontalChart from "./components/HorizontalChart";
 import ScatterChartSymbols from "./components/ScatterChartSymbols";
 import { HatTrick } from "./components/HatTick";
 import InteractiveLegendChart from "./components/InteractiveLegendChart";
+import { LanceIcon } from "./components/svg/LanceIcon";
+import DeathHistogram from "./components/TimeHistogram";
 export function DashBoard() {
   const missionlist = useDataStore((state) => {
     return state.filteredGameData;
@@ -46,8 +48,6 @@ export function DashBoard() {
       console.log(typeof element["Daño C"], element.id);
     }
   });
-  console.log(Damage.toFixed(2));
-
   return (
     <main className="dashboardContaner">
       <section className="region left-top">
@@ -71,11 +71,11 @@ export function DashBoard() {
         <Card title={"muertes"} info={1} listInfo={[]} />
       </section>
       <section className="region left-bottom">
-        <Sword />
+        <Sword daño1={10} daño2={5} daño3={5} daño4={20} />
       </section>
       <section className="region middle">
-        <div style={{ width: "100%", height: "150px" }}>
-          <ScatterChartSymbols />
+        <div style={{ width: "100%", height: "150px", display: 'flex', }}>
+          <HatTrick />
         </div>
         <div
           style={{
@@ -104,6 +104,7 @@ export function DashBoard() {
 
       <section className="region right">
         <HorizontalChart />
+        <DeathHistogram data={missionDeaths}/>
       </section>
     </main>
   );

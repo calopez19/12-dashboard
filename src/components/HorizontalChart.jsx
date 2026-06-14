@@ -49,7 +49,6 @@ const HorizontalChart = () => {
         .sort((a, b) => a.y - b.y)
     );
   }, [filteredGameData]);
-  console.log(results);
   const dynamicHeight = Math.max(results.length * 45, 300);
 
   return (

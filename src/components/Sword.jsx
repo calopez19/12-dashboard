@@ -19,7 +19,7 @@ export function Sword({ daño1 = 1, daño2 = 2, daño3 = 3, daño4 = 4 }) {
         style={{
           backgroundColor: "red",
           position: "absolute",
-          top: "61px",
+          top: "90px",
           left: "85px",
           width: "269px",
           height: "32px",
