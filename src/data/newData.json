@@ -1749,7 +1749,7 @@
     "Vida": 64800,
     "Daño C": 13149,
     "Daño F": 15109,
-    "Daño J": "N/A",
+    "Daño J": 0,
     "Daño L": 15773,
     "Daño Perros": 4733,
     "Restante": "V"
@@ -2287,7 +2287,7 @@
     "monstruo": "Chameleos elevado",
     "Vida": 126225,
     "Daño C": 34930,
-    "Daño F": "N/a",
+    "Daño F": 0,
     "Daño J": 44868,
     "Daño L": 24345,
     "Daño Perros": 4109,

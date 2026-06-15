@@ -25,7 +25,7 @@ export function Sword({ daño1 = 1, daño2 = 2, daño3 = 3, daño4 = 4 }) {
           height: "32px",
         }}
       >
-        <PileChart/>
+        <PileChart v1={daño1} v2={daño2} v3={daño3} v4={daño4}/>
       </div>
     </div>
   );

@@ -4,7 +4,9 @@ import { useDataStore } from "../stores/filteredStore";
 
 export const RegionPieChart = ({ data, category }) => {
   // use the victory filter store to track the selected result slice
-  const setResult = useDataStore((state) => { return state.setResult })
+  const setResult = useDataStore((state) => {
+    return state.setResult;
+  });
   const selectedResult = useDataStore((state) => state.selectedResult);
 
   // contar los datos de la columna dada
@@ -14,10 +16,11 @@ export const RegionPieChart = ({ data, category }) => {
     else acc.push({ x: curr[category], y: 1 });
     return acc;
   }, []);
-  
+
   return (
     <VictoryPie
       data={pieData}
+      labels={({ datum }) => `${datum.y}`}
       colorScale={["#0ecf0e", "#e4280f"]}
       style={{
         data: {
@@ -25,9 +28,12 @@ export const RegionPieChart = ({ data, category }) => {
           // Resaltar la sección seleccionada
           fillOpacity: ({ datum }) =>
             selectedResult === null || selectedResult === datum.x ? 1 : 0.3,
-          stroke: ({ datum }) =>
-            selectedResult === datum.x ? "#000" : "none",
+          stroke: ({ datum }) => (selectedResult === datum.x ? "#000" : "none"),
           strokeWidth: 2,
+        },
+        labels: {
+          fontSize: 55,
+          fill: "#050505",
         },
       }}
       events={[
@@ -40,7 +46,7 @@ export const RegionPieChart = ({ data, category }) => {
                   target: "data",
                   mutation: (props) => {
                     setResult(props.datum.x);
-                     // Actualiza Zustand
+                    // Actualiza Zustand
                     return null;
                   },
                 },

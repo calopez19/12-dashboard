@@ -9,8 +9,14 @@ import HorizontalChart from "./components/HorizontalChart";
 import ScatterChartSymbols from "./components/ScatterChartSymbols";
 import { HatTrick } from "./components/HatTick";
 import InteractiveLegendChart from "./components/InteractiveLegendChart";
-import { LanceIcon } from "./components/svg/LanceIcon";
 import DeathHistogram from "./components/TimeHistogram";
+import { useMemo } from "react";
+import { SwordShieldIcon } from "./components/svg/SwordShieldIcon";
+import { LanceIcon } from "./components/svg/LanceIcon";
+import { LongSwordIcon } from "./components/svg/LongSwordIcon";
+import { DualBladesIcon } from "./components/svg/DualBladesIcon";
+import { obtenerRankingCargado } from "./utils";
+import { NewCard } from "./components/NwCard";
 export function DashBoard() {
   const missionlist = useDataStore((state) => {
     return state.filteredGameData;
@@ -40,14 +46,47 @@ export function DashBoard() {
   const dogDamage = missionlist.reduce((acc, element) => {
     return acc + Number(element["Daño Perros"]);
   }, 0);
-  const Damage = missionlist.reduce((acc, element) => {
-    return acc + Number(element["Daño C"]);
-  }, 0);
-  missionlist.forEach((element) => {
-    if (typeof element["Daño C"] === 'string') {
-      console.log(typeof element["Daño C"], element.id);
-    }
-  });
+
+  const DC = useMemo(
+    () =>
+      missionlist.reduce((acc, element) => {
+        return acc + Number(element["Daño C"]);
+      }, 0),
+    [missionlist],
+  );
+  const DF = useMemo(
+    () =>
+      missionlist.reduce((acc, element) => {
+        return acc + Number(element["Daño F"]);
+      }, 0),
+    [missionlist],
+  );
+  const DJ = useMemo(
+    () =>
+      missionlist.reduce((acc, element) => {
+        return acc + Number(element["Daño J"]);
+      }, 0),
+    [missionlist],
+  );
+  const DL = useMemo(
+    () =>
+      missionlist.reduce((acc, element) => {
+        return acc + Number(element["Daño L"]);
+      }, 0),
+    [missionlist],
+  );
+
+  const MDatos = {
+    camilo: { icon: <SwordShieldIcon />, name: "Camilo", score: 0 },
+    franco: { icon: <SwordShieldIcon />, name: "Franco", score: 0 },
+    luciano: { icon: <SwordShieldIcon />, name: "Luciano", score: 0 },
+    javier: { icon: <DualBladesIcon />, name: "Javier", score: 0 },
+  };
+
+  const listaOrdenada = useMemo(() => {
+    return obtenerRankingCargado(MDatos, missionDeaths);
+  }, [missionDeaths]);
+
   return (
     <main className="dashboardContaner">
       <section className="region left-top">
@@ -56,10 +95,10 @@ export function DashBoard() {
           info={missionlist.length}
           listInfo={[]}
         />
-        <Card
+        <NewCard
           title={"Número de muertes"}
           info={missionDeaths.length}
-          listInfo={[]}
+          listInfo={listaOrdenada}
         />
         <Card
           title={"Tiempo Total"}
@@ -67,14 +106,18 @@ export function DashBoard() {
           listInfo={[]}
         />
         <Card title={"Daño de los perros"} info={dogDamage} listInfo={[]} />
-        <Card title={"Daño total"} info={Damage.toFixed(2)} listInfo={[]} />
-        <Card title={"muertes"} info={1} listInfo={[]} />
+        <Card
+          title={"Daño total"}
+          info={(DC + DL + DF + DJ).toFixed(2)}
+          listInfo={[]}
+        />
+        <Card title={"Muerte más rapida"} info={'Javier a los 42 s'} listInfo={[]} />
       </section>
       <section className="region left-bottom">
-        <Sword daño1={10} daño2={5} daño3={5} daño4={20} />
+        <Sword daño1={DC} daño2={DF} daño3={DJ} daño4={DL} />
       </section>
       <section className="region middle">
-        <div style={{ width: "100%", height: "150px", display: 'flex', }}>
+        <div style={{ width: "100%", height: "150px", display: "flex" }}>
           <HatTrick />
         </div>
         <div
@@ -104,7 +147,7 @@ export function DashBoard() {
 
       <section className="region right">
         <HorizontalChart />
-        <DeathHistogram data={missionDeaths}/>
+        <DeathHistogram data={missionDeaths} />
       </section>
     </main>
   );
